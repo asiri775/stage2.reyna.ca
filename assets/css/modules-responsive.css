@@ -1,0 +1,2110 @@
+/*------------------------------------------------------------------
+ * This is main responsive css file for theme. It is broken into following sections:
+ * 1. Global responsive styles
+ * 2. Blog responsive styles
+ * 3. Footer responsive styles
+ * 4. Header responsive styles
+ * 5. Search responsive styles
+ * 6. Title area responsive styles
+ * 7. Shortcodes responsive styles
+ * 8. Custom Post Types responsive styles
+-------------------------------------------------------------------*/
+
+/* ==========================================================================
+   1. Global responsive styles
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+@media only screen and (max-width: 1024px) {
+  body:not(.mkdf-content-is-behind-header):not(.error404) .mkdf-content {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-hide-on-tablet {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section,
+  .mkdf-elementor-row-grid-section > .elementor-container {
+    width: 950px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section,
+  .mkdf-elementor-row-grid-section > .elementor-container {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section,
+  .mkdf-elementor-row-grid-section > .elementor-container {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section,
+  .mkdf-elementor-row-grid-section > .elementor-container {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section,
+  .mkdf-elementor-row-grid-section > .elementor-container {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mkdf-grid,
+  .mkdf-container-inner,
+  .mkdf-row-grid-section,
+  .mkdf-elementor-row-grid-section > .elementor-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 818px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mkdf-boxed .mkdf-wrapper .mkdf-wrapper-inner,
+  .mkdf-boxed .mkdf-wrapper .mkdf-footer-inner {
+    width: 92%;
+  }
+}
+
+/* ==========================================================================
+   Grid System responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  /*
+    * If you changed some value for space do the same thing in masonry-type, product-list-main-and-vc scss files
+    */
+
+  .mkdf-huge-space.mkdf-disable-bottom-space {
+    margin-bottom: -50px;
+  }
+
+  .mkdf-huge-space .mkdf-outer-space {
+    margin: 0 -25px;
+  }
+
+  .mkdf-huge-space .mkdf-outer-space .mkdf-item-space {
+    padding: 0 25px;
+    margin: 0 0 50px;
+  }
+}
+
+/* ==========================================================================
+   Grid System responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../css/modules-responsive.css.map */
+/* ==========================================================================
+   Blog responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Blog Masonry general style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns .mkdf-blog-masonry-grid-sizer {
+    width: 25%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article.mkdf-masonry-size-large-width,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article.mkdf-masonry-size-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns article,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns .mkdf-blog-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns article.mkdf-masonry-size-large-width,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns article.mkdf-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns .mkdf-blog-masonry-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article.mkdf-masonry-size-large-width,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article.mkdf-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-three-columns article,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-three-columns .mkdf-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-three-columns article.mkdf-masonry-size-large-width,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-three-columns article.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns article,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns .mkdf-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns article.mkdf-masonry-size-large-width,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns article.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns .mkdf-blog-masonry-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article.mkdf-masonry-size-large-width,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-two-columns article,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-two-columns .mkdf-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-two-columns article.mkdf-masonry-size-large-width,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-two-columns article.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-three-columns article,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-three-columns .mkdf-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-three-columns article.mkdf-masonry-size-large-width,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-three-columns article.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns article,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns .mkdf-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns article.mkdf-masonry-size-large-width,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-four-columns article.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns .mkdf-blog-masonry-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article.mkdf-masonry-size-large-width,
+  .mkdf-blog-holder.mkdf-blog-type-masonry.mkdf-blog-five-columns article.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Blog Masonry general style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .mkdf-related-posts-holder .mkdf-related-post {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-related-posts-holder .mkdf-related-post {
+    width: 100% !important;
+  }
+
+  .mkdf-blog-single-navigation-share .mkdf-blog-single-share {
+    position: relative;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .mkdf-blog-single-navigation-share .mkdf-blog-single-prev,
+  .mkdf-blog-single-navigation-share .mkdf-blog-single-next {
+    position: relative;
+    min-height: initial;
+    left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+  }
+
+  .mkdf-blog-single-navigation-share .mkdf-blog-single-prev .mkdf-title,
+  .mkdf-blog-single-navigation-share .mkdf-blog-single-next .mkdf-title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-blog-holder.mkdf-blog-single article .mkdf-post-info-bottom .mkdf-post-info-bottom-left,
+  .mkdf-blog-holder.mkdf-blog-single article .mkdf-post-info-bottom .mkdf-post-info-bottom-right {
+    width: 100%;
+    float: none;
+  }
+
+  .mkdf-blog-holder.mkdf-blog-single article .mkdf-post-info-bottom .mkdf-post-info-bottom-right {
+    text-align: inherit;
+    margin: 10px 0 0;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-blog-list-holder.mkdf-bl-four-columns .mkdf-bl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkdf-blog-list-holder.mkdf-bl-four-columns .mkdf-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-blog-list-holder.mkdf-bl-five-columns .mkdf-bl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkdf-blog-list-holder.mkdf-bl-five-columns .mkdf-bl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-blog-list-holder.mkdf-bl-three-columns .mkdf-bl-item {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-blog-list-holder.mkdf-bl-three-columns .mkdf-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-blog-list-holder.mkdf-bl-four-columns .mkdf-bl-item {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-blog-list-holder.mkdf-bl-four-columns .mkdf-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-blog-list-holder.mkdf-bl-five-columns .mkdf-bl-item {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-blog-list-holder.mkdf-bl-five-columns .mkdf-bl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-blog-list-holder .mkdf-blog-list .mkdf-bl-item {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Blog List shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Blog responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=blog-map-responsive.css.map */
+/* ==========================================================================
+   Footer responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Footer responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3 {
+    width: 50%;
+    float: left;
+  }
+
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3:nth-child(2n+1) {
+    clear: both;
+  }
+
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3:nth-child(3),
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-3:nth-child(4) {
+    margin-top: 30px;
+  }
+
+  .mkdf-page-footer .mkdf-column-content.mkdf-grid-col-4 {
+    width: 33.33333333333333%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-page-footer .mkdf-column-content:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+/* ==========================================================================
+   Footer responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Footer responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=footer-map-responsive.css.map */
+/* ==========================================================================
+   Header responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-page-header {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Fixed header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-boxed .mkdf-page-header .mkdf-fixed-wrapper.fixed {
+    width: 1000px;
+  }
+}
+
+/* ==========================================================================
+   Fixed header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Mobile header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-mobile-header {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Mobile header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Sticky header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-boxed .mkdf-page-header .mkdf-sticky-header {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-boxed.mkdf-sticky-up-mobile-header .mobile-header-appear .mkdf-mobile-header-inner {
+    width: 818px;
+    left: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-boxed.mkdf-sticky-up-mobile-header .mobile-header-appear .mkdf-mobile-header-inner {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-boxed.mkdf-sticky-up-mobile-header .mobile-header-appear .mkdf-mobile-header-inner {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-boxed.mkdf-sticky-up-mobile-header .mobile-header-appear .mkdf-mobile-header-inner {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mkdf-boxed.mkdf-sticky-up-mobile-header .mobile-header-appear .mkdf-mobile-header-inner {
+    width: 92%;
+  }
+}
+
+/* ==========================================================================
+   Sticky header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Top header responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-top-bar {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Top header responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Header responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=header-map-responsive.css.map */
+/* ==========================================================================
+   Search responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+# Search template responsive style - begin
+========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-search-page-holder article .mkdf-post-image {
+    width: 80px;
+  }
+
+  .mkdf-search-page-holder article .mkdf-post-title-area {
+    padding: 0 0 0 105px;
+    min-height: 80px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-search-page-holder article .mkdf-post-image {
+    width: 60px;
+  }
+
+  .mkdf-search-page-holder article .mkdf-post-title-area {
+    padding: 0 0 0 80px;
+    min-height: 60px;
+  }
+}
+
+/* ==========================================================================
+# Search template responsive style - end
+========================================================================== */
+
+/* ==========================================================================
+   Search responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=search-map-responsive.css.map */
+/* ==========================================================================
+   Title responsive styles - begin
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Title responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-title-holder.mkdf-has-bg-image {
+    background-image: none !important;
+    height: auto !important;
+  }
+
+  .mkdf-title-holder.mkdf-has-bg-image .mkdf-title-image {
+    display: block;
+  }
+
+  .mkdf-title-holder.mkdf-has-bg-image .mkdf-title-wrapper {
+    height: 100% !important;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .mkdf-title-holder.mkdf-title-va-header-bottom {
+    height: auto !important;
+  }
+
+  .mkdf-title-holder.mkdf-title-va-header-bottom .mkdf-title-wrapper {
+    padding-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-title-holder .mkdf-page-title {
+    color: #000000;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+  }
+
+  .mkdf-title-holder .mkdf-page-title a {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+  }
+
+  .mkdf-title-holder .mkdf-page-title a:hover {
+    color: #c59d5f;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-title-holder var {
+    display: none !important;
+  }
+
+  .mkdf-title-holder .mkdf-page-title {
+    color: #000000;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    line-height: 1.41em;
+    text-transform: uppercase;
+  }
+
+  .mkdf-title-holder .mkdf-page-title a {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+  }
+
+  .mkdf-title-holder .mkdf-page-title a:hover {
+    color: #c59d5f;
+  }
+}
+
+/* ==========================================================================
+   Title responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Centered Title type responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-title-holder.mkdf-centered-type .mkdf-page-subtitle {
+    padding: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Centered Title type responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-title-holder.mkdf-standard-with-breadcrumbs-type .mkdf-title-info,
+  .mkdf-title-holder.mkdf-standard-with-breadcrumbs-type .mkdf-breadcrumbs-info {
+    display: block;
+    width: 100%;
+  }
+
+  .mkdf-title-holder.mkdf-standard-with-breadcrumbs-type .mkdf-breadcrumbs-info {
+    margin: 10px 0 0;
+    text-align: initial;
+    white-space: inherit;
+  }
+}
+
+/* ==========================================================================
+   Standard With Breadcrumbs Title type responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Title responsive styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=title-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Single page responsive style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images {
+  /***** Columns Layout - begin *****/
+  /***** Columns Layout - end *****/
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-four-columns .mkdf-ps-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-four-columns .mkdf-ps-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-three-columns .mkdf-ps-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-three-columns .mkdf-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-four-columns .mkdf-ps-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-four-columns .mkdf-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images .mkdf-ps-image {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-image,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-image.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-image.mkdf-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-five-columns .mkdf-ps-image,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-five-columns .mkdf-ps-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-five-columns .mkdf-ps-image.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-five-columns .mkdf-ps-image.mkdf-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-three-columns .mkdf-ps-image,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-three-columns .mkdf-ps-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-three-columns .mkdf-ps-image.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-three-columns .mkdf-ps-image.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-image,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-image.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-image.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-five-columns .mkdf-ps-image,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-five-columns .mkdf-ps-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-five-columns .mkdf-ps-image.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-five-columns .mkdf-ps-image.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-two-columns .mkdf-ps-image,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-two-columns .mkdf-ps-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-three-columns .mkdf-ps-image,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-three-columns .mkdf-ps-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-image,
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-grid-sizer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-info-holder {
+    margin: 30px 0 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single page responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-five-columns article {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-five-columns article:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns .mkdf-pl-grid-sizer {
+    width: 25%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article.mkdf-masonry-size-large-width-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-four-columns article {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 1025px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-four-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-five-columns article {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 1025px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-five-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns article,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns .mkdf-pl-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns article.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns article.mkdf-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns .mkdf-pl-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article.mkdf-masonry-size-large-width-height {
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-three-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-three-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-four-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-four-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-five-columns article {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-five-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-three-columns article,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-three-columns .mkdf-pl-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-three-columns article.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-three-columns article.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns article,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns .mkdf-pl-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns article.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns article.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns .mkdf-pl-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article.mkdf-masonry-size-large-width,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article.mkdf-masonry-size-large-width-height {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery article {
+    width: 100% !important;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-two-columns article,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-two-columns .mkdf-pl-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-three-columns article,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-three-columns .mkdf-pl-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns article,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns .mkdf-pl-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article,
+  .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns .mkdf-pl-grid-sizer {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Portfolio shortcode responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-testimonials-holder .mkdf-testimonials-background-text {
+    font-size: 170px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-testimonials-holder .mkdf-testimonials {
+    padding: 0;
+  }
+
+  .mkdf-testimonials-holder .mkdf-testimonials-background-text {
+    font-size: 70px;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/curly-core/assets/css/custom-post-types-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+
+@media only screen and (max-width: 680px) {
+  .mkdf-banner-holder .mkdf-banner-tagline {
+    font-size: 50px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-btn.mkdf-btn-large,
+  .mkdf-btn.mkdf-btn-huge {
+    padding: 18px 70px;
+  }
+}
+
+/* ==========================================================================
+   Button shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Countdown shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-countdown .countdown-row.countdown-show4 .countdown-section,
+  .mkdf-countdown .countdown-row.countdown-show5 .countdown-section,
+  .mkdf-countdown .countdown-row.countdown-show6 .countdown-section {
+    width: 33.33333333333333%;
+  }
+
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-countdown .countdown-row .countdown-section .countdown-amount {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================================================
+   Countdown shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+  .mkdf-custom-font-holder.mkdf-disable-title-break br {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Custom Font shortcode responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1366.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-1024.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-768.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-680.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-two-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-three-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-four-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-five-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-six-columns .mkdf-eh-item {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-left .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: left;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-right .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: right;
+  }
+
+  .mkdf-elements-holder.mkdf-responsive-mode-480.mkdf-one-column-alignment-center .mkdf-eh-item .mkdf-eh-item-content {
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Google Map shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-google-map-overlay {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Google Map shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-six-columns .mkdf-ig-image {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1281px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-six-columns .mkdf-ig-image:nth-child(6n+1) {
+    clear: none;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-six-columns .mkdf-ig-image:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-grid-sizer {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-five-columns .mkdf-ig-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-five-columns .mkdf-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-six-columns .mkdf-ig-image {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-six-columns .mkdf-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-grid-sizer {
+    width: 25%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 50%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-grid-sizer {
+    width: 25%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-five-columns .mkdf-ig-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-five-columns .mkdf-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-six-columns .mkdf-ig-image {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-six-columns .mkdf-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-four-columns .mkdf-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-two-columns .mkdf-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-three-columns .mkdf-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-four-columns .mkdf-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 66.66667%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-grid-sizer {
+    width: 33.33333%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 66.66667%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-four-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-four-columns .mkdf-ig-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-four-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-five-columns .mkdf-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-five-columns .mkdf-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-six-columns .mkdf-ig-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 681px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-six-columns .mkdf-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-three-columns .mkdf-ig-image {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-grid-sizer {
+    width: 50%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-three-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-three-columns .mkdf-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-three-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-two-columns .mkdf-ig-image {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-three-columns .mkdf-ig-image {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-four-columns .mkdf-ig-image {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-five-columns .mkdf-ig-image {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-grid.mkdf-ig-six-columns .mkdf-ig-image {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-two-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-two-columns .mkdf-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-two-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-three-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-three-columns .mkdf-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-three-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-four-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-four-columns .mkdf-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-four-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-five-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-image,
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-grid-sizer {
+    width: 100%;
+  }
+
+  .mkdf-image-gallery .mkdf-ig-masonry.mkdf-ig-six-columns .mkdf-ig-image.mkdf-large-masonry-item {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - end
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-info-section .mkdf-is-background-text {
+    font-size: 170px !important;
+    padding-top: 25px !important;
+  }
+
+  .mkdf-info-section .mkdf-is-inner {
+    padding-top: 112.5px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-info-section .mkdf-is-background-text {
+    opacity: .2;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-info-section .mkdf-is-inner {
+    padding-top: 112.5px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mkdf-info-section .mkdf-is-background-text {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-pricing-tables.mkdf-four-columns .mkdf-price-table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 681px) {
+  .mkdf-pricing-tables.mkdf-four-columns .mkdf-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-pricing-tables.mkdf-five-columns .mkdf-price-table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 681px) {
+  .mkdf-pricing-tables.mkdf-five-columns .mkdf-price-table:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-pricing-tables.mkdf-three-columns .mkdf-price-table {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-pricing-tables .mkdf-price-table {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-section-title-holder.mkdf-st-two-columns {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-section-title-holder {
+    padding: 0 !important;
+  }
+
+  .mkdf-section-title-holder .mkdf-st-background-text {
+    font-size: 170px !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  .mkdf-section-title-holder.mkdf-st-two-columns .mkdf-st-title,
+  .mkdf-section-title-holder.mkdf-st-two-columns .mkdf-st-text {
+    float: none !important;
+    text-align: initial !important;
+    width: 100%;
+  }
+
+  .mkdf-section-title-holder.mkdf-st-two-columns .mkdf-st-text {
+    margin: 14px 0 0;
+  }
+
+  .mkdf-section-title-holder.mkdf-st-disable-title-break .mkdf-st-title br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-section-title-holder .mkdf-st-background-text {
+    font-size: 80px !important;
+  }
+}
+
+/* ==========================================================================
+   Section Title shortcode responsive styles - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Stacked Images responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1366px) {
+  .mkdf-stacked-images-holder.mkdf-si-position-left .mkdf-si-images {
+    margin: 0 160px 130px 0;
+  }
+
+  .mkdf-stacked-images-holder.mkdf-si-position-left .mkdf-si-images .mkdf-si-stack-image {
+    left: 160px;
+  }
+
+  .mkdf-stacked-images-holder.mkdf-si-position-right .mkdf-si-images {
+    margin: 0 0 130px 160px;
+  }
+
+  .mkdf-stacked-images-holder.mkdf-si-position-right .mkdf-si-images .mkdf-si-stack-image {
+    right: 160px;
+  }
+
+  .mkdf-stacked-images-holder .mkdf-si-images.mkdf-appeared .mkdf-si-stack-image {
+    top: 130px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-stacked-images-holder.mkdf-si-position-left .mkdf-si-images {
+    margin: 0 80px 30px 0;
+  }
+
+  .mkdf-stacked-images-holder.mkdf-si-position-left .mkdf-si-images .mkdf-si-stack-image {
+    left: 80px;
+  }
+
+  .mkdf-stacked-images-holder.mkdf-si-position-right .mkdf-si-images {
+    margin: 0 0 30px 80px;
+  }
+
+  .mkdf-stacked-images-holder.mkdf-si-position-right .mkdf-si-images .mkdf-si-stack-image {
+    right: 80px;
+  }
+
+  .mkdf-stacked-images-holder .mkdf-si-images.mkdf-appeared .mkdf-si-stack-image {
+    top: 30px;
+  }
+}
+
+/* ==========================================================================
+   Stacked Images responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Tabs shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li a {
+    padding: 7px 21px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li {
+    margin: 0 8px 0 0;
+  }
+
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li a {
+    padding: 7px 18px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    margin: 0 26px 0 0;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav {
+    width: 180px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tab-container {
+    width: calc(100% - 180px);
+    padding: 0 0 0 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+  }
+
+  .mkdf-tabs.mkdf-tabs-standard .mkdf-tabs-nav li a {
+    width: 100%;
+  }
+
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 8px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-boxed .mkdf-tabs-nav li a {
+    width: 100%;
+  }
+
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    margin: 0 20px 0 0;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav,
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tab-container {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav {
+    border-right: 0;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tab-container {
+    padding: 31px 0 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav {
+    padding: 0 0 20px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-simple .mkdf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li {
+    display: block;
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  .mkdf-tabs.mkdf-tabs-vertical .mkdf-tabs-nav li a {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Tabs shortcode responsive style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - begin
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px) {
+  body.mkdf-vss-initialized {
+    overflow-y: visible !important;
+    height: auto !important;
+  }
+
+  .mkdf-vertical-split-slider,
+  #multiscroll-nav {
+    display: none;
+  }
+
+  .mkdf-vss-responsive {
+    display: block;
+  }
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode responsive style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/curly-core/assets/css/shortcodes-map-responsive.css.map */
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+
+/* common mixins - start */
+
+/* common mixins - end */
+
+/* mixins styles - start */
+
+/* mixins styles - end */
+
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-twitter-list-holder.mkdf-tl-four-columns .mkdf-tl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkdf-twitter-list-holder.mkdf-tl-four-columns .mkdf-tl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-twitter-list-holder.mkdf-tl-five-columns .mkdf-tl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkdf-twitter-list-holder.mkdf-tl-five-columns .mkdf-tl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-twitter-list-holder.mkdf-tl-three-columns .mkdf-tl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-twitter-list-holder.mkdf-tl-three-columns .mkdf-tl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-twitter-list-holder.mkdf-tl-four-columns .mkdf-tl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-twitter-list-holder.mkdf-tl-four-columns .mkdf-tl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-twitter-list-holder.mkdf-tl-five-columns .mkdf-tl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-twitter-list-holder.mkdf-tl-five-columns .mkdf-tl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-twitter-list-holder .mkdf-tl-item {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/curly-twitter-feed/assets/css/shortcodes-map-responsive.css.map */

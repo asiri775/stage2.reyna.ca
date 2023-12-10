@@ -1,0 +1,23 @@
+.wp-block-woocommerce-price-filter {
+  border-style: none !important;
+}
+
+.wc-block-price-slider {
+  border-radius: inherit;
+  border-color: inherit;
+}
+
+.wc-block-price-filter {
+  border-radius: inherit;
+  border-color: inherit;
+}
+
+.wc-block-price-filter__controls {
+  border-radius: inherit;
+  border-color: inherit;
+}
+.wc-block-price-filter__controls input {
+  border-radius: inherit !important;
+  border-color: inherit !important;
+  border-style: solid;
+}/*# sourceMappingURL=style.css.map */

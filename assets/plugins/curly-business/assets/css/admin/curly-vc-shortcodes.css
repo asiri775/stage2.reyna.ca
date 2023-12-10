@@ -1,0 +1,4 @@
+.extended-custom-business-icon {
+    background-image: url('img/vc-shortcodes.png') !important; /* to override Visual Composer css style */
+    background-size: auto !important;
+}

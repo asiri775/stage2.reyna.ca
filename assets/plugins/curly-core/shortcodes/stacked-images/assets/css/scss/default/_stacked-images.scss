@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Stacked Images style - begin
+   ========================================================================== */
+
+.mkdf-stacked-images-holder {
+    @include mkdfRelativeHolderLayout();
+
+    img {
+        display: block;
+    }
+
+    &.mkdf-si-position-left {
+        .mkdf-si-images {
+            margin: 0 225px 160px 0;
+
+            .mkdf-si-stack-image {
+                left: 225px;
+            }
+        }
+    }
+
+    &.mkdf-si-position-right {
+        .mkdf-si-images {
+            margin: 0 0 160px 225px;
+
+            .mkdf-si-stack-image {
+                right: 225px;
+            }
+        }
+    }
+
+    .mkdf-si-images {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        top: 50px;
+        opacity: 0;
+
+        @include mkdfTransition(opacity .55s cubic-bezier(0.23, 1, 0.32, 1), top .55s cubic-bezier(0.23, 1, 0.32, 1));
+
+        &.mkdf-appeared {
+            opacity: 1;
+            top: 0;
+
+            .mkdf-si-stack-image {
+                top: 160px;
+            }
+        }
+
+        .mkdf-si-stack-image {
+            position: absolute;
+            top: 100px;
+            display: block;
+
+            @include mkdfTransition(top .7s cubic-bezier(0.23, 1, 0.32, 1));
+        }
+    }
+}
+
+/* ==========================================================================
+   Stacked Images style - end
+   ========================================================================== */

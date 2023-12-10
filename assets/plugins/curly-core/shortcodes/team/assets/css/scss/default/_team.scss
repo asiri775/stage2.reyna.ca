@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Team shortcode style - begin
+   ========================================================================== */
+
+.mkdf-team-holder {
+    text-align: center;
+
+    @include mkdfRelativeHolderLayout();
+
+    .mkdf-team-image {
+        @include mkdfRelativeHolderLayout();
+
+        img {
+            display: block;
+        }
+        &:after {
+            content: ' ';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+            background-color: rgba(40, 40, 40, 0.25);
+        }
+
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+
+    .mkdf-team-info {
+        @include mkdfRelativeHolderLayout();
+
+        margin: 43px 0 0;
+    }
+
+    .mkdf-team-name {
+        margin: 0 0 12px;
+    }
+
+    .mkdf-team-position {
+        margin: 0;
+    }
+
+    .mkdf-team-text {
+        margin: 0;
+    }
+
+    .mkdf-social-share-holder {
+        margin-top: 30px;
+
+        .mkdf-list li:after {
+            padding: 0 8px;
+        }
+    }
+
+    .mkdf-icon-shortcode .mkdf-icon-element {
+        @include mkdfTransition(none);
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // skin
+
+    &.mkdf-dark {
+        .mkdf-team-name,
+        .mkdf-team-position,
+        .mkdf-team-text {
+            color: $default-text-color;
+        }
+    }
+
+    &.mkdf-light {
+        .mkdf-team-name,
+        .mkdf-team-position,
+        .mkdf-team-text,
+        .mkdf-social-share-holder a,
+        .mkdf-social-share-holder li:after {
+            color: #ffffff;
+        }
+
+        .mkdf-social-share-holder a:hover {
+            color: $first-main-color;
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // shadow
+
+    &.mkdf-has-shadow {
+        .mkdf-team-image {
+            box-shadow: $default-box-shadow;
+        }
+    }
+}
+
+/* ==========================================================================
+   Team shortcode style - end
+   ========================================================================== */

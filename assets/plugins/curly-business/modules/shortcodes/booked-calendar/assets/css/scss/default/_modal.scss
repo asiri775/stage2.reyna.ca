@@ -1,0 +1,133 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// modal window
+
+body {
+    .booked-modal {
+        $gutter: 45px;
+
+        .bm-window {
+            background-color: #ffffff;
+            border-radius: 0;
+            border-top: 6px solid $first-main-color;
+            box-shadow: $default-box-shadow;
+            padding: 70px $gutter 30px $gutter;
+
+            p {
+                @include mkdfParagraph();
+            }
+
+            .booked-title-bar {
+                background: transparent !important;
+                border-radius: 0;
+                color: $default-text-color !important;
+                margin: 0;
+                padding: 25px $gutter 10px $gutter !important;
+
+                @include mkdfH4(!important);
+
+                * {
+                    @include mkdfTypographyLayout();
+                }
+
+                i.fa {
+                    color: $first-main-color;
+                }
+            }
+
+            a:not(.close) {
+                color: $first-main-color;
+
+                &:hover {
+                    color: $default-text-color;
+                }
+            }
+
+            .close {
+                background-color: $first-main-color;
+                color: $default-text-color;
+                display: block;
+                height: 30px;
+                line-height: 30px;
+                right: 0;
+                text-align: center;
+                top: -30px;
+                width: 30px;
+
+                @include mkdfTransition(color .2s ease-out);
+
+                &:hover {
+                    color: #ffffff;
+                }
+
+                i {
+                    font-family: 'FontAwesome';
+                    font-size: 14px;
+                    top: -3px;
+                    position: relative;
+
+                    &:before {
+                        content: "\f00d";
+                    }
+                }
+            }
+
+            .booked-scrollable {
+                background-color: transparent;
+                padding: 10px 0 34px 0;
+            }
+
+            .booked-form {
+                .booked-appointments {
+                    background-color: transparent;
+                    border: 1px solid $default-border-color;
+                    border-radius: 0;
+                    box-shadow: none;
+                    padding: 20px;
+                }
+
+                .appointment-title {
+                    color: $first-main-color !important;
+
+                    @include mkdfH5(!important);
+                }
+            }
+
+            .button {
+                cursor: pointer;
+                float: left;
+
+                @include mkdfButtonDefaultStyle();
+                @include mkdfButtonSmallParams();
+
+                &:last-child {
+                    margin-top: 10px;
+                }
+
+                @media (max-width: 420px) {
+                    letter-spacing: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 100%;
+                }
+            }
+
+            input[type=submit].button-primary {
+                @include mkdfButtonSolidColor(!important);
+
+                &:hover {
+                    @include mkdfButtonSolidHoverColor(!important);
+                }
+            }
+
+            button.cancel {
+                clear: both;
+
+                @include mkdfButtonOutlineColor(!important);
+
+                &:hover {
+                    @include mkdfButtonOutlineHoverColor(!important);
+                }
+            }
+        }
+    }
+}

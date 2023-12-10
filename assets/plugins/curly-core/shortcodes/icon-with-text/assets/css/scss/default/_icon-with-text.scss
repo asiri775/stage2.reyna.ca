@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+
+.mkdf-iwt {
+    @include mkdfRelativeHolderLayout();
+
+    .mkdf-iwt-icon {
+        a {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .mkdf-icon-shortcode {
+            line-height: 1;
+
+            &.mkdf-circle,
+            &.mkdf-square {
+                line-height: 2;
+            }
+        }
+    }
+
+    .mkdf-iwt-title {
+        margin: 0;
+        line-height: 1.2em;
+
+        a {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    .mkdf-iwt-title-text {
+        display: block;
+    }
+
+    .mkdf-iwt-text {
+        margin: 22px 0 0;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // left
+
+    &.mkdf-iwt-icon-left {
+        width: auto;
+
+        .mkdf-iwt-icon,
+        .mkdf-iwt-content {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .mkdf-iwt-icon {
+            position: relative;
+            top: 1px;
+
+            img {
+                max-width: none;
+            }
+        }
+
+        .mkdf-iwt-content {
+            padding: 0 0 0 13px;
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // left from title
+
+    &.mkdf-iwt-icon-left-from-title {
+        .mkdf-iwt-icon,
+        .mkdf-iwt-title-text {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .mkdf-iwt-icon {
+            .mkdf-icon-element {
+                @include mkdfTransition(none);
+            }
+
+            img {
+                max-width: none;
+            }
+        }
+
+        .mkdf-iwt-title-text {
+            padding: 0 0 0 17px;
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // top
+
+    &.mkdf-iwt-icon-top {
+        text-align: center;
+
+        .mkdf-iwt-content {
+            padding: 35px 0 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */

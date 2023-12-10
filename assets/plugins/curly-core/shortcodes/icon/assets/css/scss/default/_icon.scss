@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Icon shortcode style - begin
+   ========================================================================== */
+
+.mkdf-icon-shortcode {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1em;
+
+    &.mkdf-circle,
+    &.mkdf-square {
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        text-align: center;
+        background-color: $first-main-color;
+        @include mkdfTransition(background-color .15s ease-in-out, border-color .15s ease-in-out);
+
+        a {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mkdf-icon-element {
+            color: #fff;
+            line-height: inherit;
+        }
+    }
+
+    &.mkdf-circle {
+        border-radius: 50%;
+    }
+
+    .mkdf-icon-element {
+        display: block;
+        line-height: inherit;
+
+        &:before {
+            display: block;
+            line-height: inherit;
+        }
+    }
+}
+
+.mkdf-icon-animation-holder {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    @include mkdfTransform(scale(0));
+    @include mkdfTransition(transform 0.15s ease-in-out);
+
+    &.mkdf-icon-animation-show {
+        @include mkdfTransform(scale(1));
+    }
+}
+
+.mkdf-icon-tiny {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%;
+}
+
+.mkdf-icon-small {
+    font-size: 2em;
+}
+
+.mkdf-icon-medium {
+    font-size: 3em;
+}
+
+.mkdf-icon-large {
+    font-size: 4em;;
+}
+
+.mkdf-icon-huge {
+    font-size: 5em;
+}
+
+/* ==========================================================================
+   Icon shortcode style - end
+   ========================================================================== */

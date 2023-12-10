@@ -1,0 +1,307 @@
+/* ==========================================================================
+   Image Gallery shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+
+    .mkdf-image-gallery {
+
+        .mkdf-ig-grid {
+            $gallery_columns: ('six');
+
+            @for $i from 0 to length($gallery_columns) {
+                &.mkdf-ig-#{nth($gallery_columns,$i+1)}-columns {
+                    $column_width: 100%/5;
+
+                    .mkdf-ig-image {
+                        width: $column_width;
+
+                        @media only screen and (min-width: $laptop-landscape-medium-plus-pixel) {
+                            &:nth-child(6n+1) {
+                                clear: none;
+                            }
+
+                            &:nth-child(5n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-ig-masonry {
+            $masonry_columns: ('six');
+
+            @for $i from 0 to length($masonry_columns) {
+                &.mkdf-ig-#{nth($masonry_columns,$i+1)}-columns {
+                    $column_width: 100%/5;
+
+                    .mkdf-ig-image,
+                    .mkdf-ig-grid-sizer {
+                        width: $column_width;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include laptop-landscape-medium {
+
+    .mkdf-image-gallery {
+
+        .mkdf-ig-grid {
+            $gallery_columns: ('five', 'six');
+
+            @for $i from 0 to length($gallery_columns) {
+                &.mkdf-ig-#{nth($gallery_columns,$i+1)}-columns {
+                    $column_width: 100%/4;
+
+                    .mkdf-ig-image {
+                        width: $column_width;
+                        $gallery_list_columns_label: #{nth($gallery_columns,$i+1)};
+
+                        @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+                            @if $gallery_list_columns_label == "5" {
+                                &:nth-child(5n+1) {
+                                    clear: none;
+                                }
+                            } @else if $gallery_list_columns_label == "6" {
+                                &:nth-child(6n+1) {
+                                    clear: none;
+                                }
+                            }
+
+                            &:nth-child(4n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-ig-masonry {
+            $masonry_columns: ('five', 'six');
+
+            @for $i from 0 to length($masonry_columns) {
+                &.mkdf-ig-#{nth($masonry_columns,$i+1)}-columns {
+                    $column_width: 100%/4;
+
+                    .mkdf-ig-image,
+                    .mkdf-ig-grid-sizer {
+                        width: $column_width;
+                    }
+
+                    .mkdf-ig-image.mkdf-large-masonry-item {
+                        width: $column_width * 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+
+    .mkdf-image-gallery {
+
+        .mkdf-ig-grid {
+            $gallery_columns: ('five', 'six');
+
+            @for $i from 0 to length($gallery_columns) {
+                &.mkdf-ig-#{nth($gallery_columns,$i+1)}-columns {
+                    $column_width: 100%/3;
+
+                    .mkdf-ig-image {
+                        width: $column_width;
+
+                        @media only screen and (min-width: $ipad-portrait-plus-pixel) {
+                            &:nth-child(3n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+
+            $gallery_columns_two: ('four');
+
+            @for $i from 0 to length($gallery_columns_two) {
+                &.mkdf-ig-#{nth($gallery_columns_two,$i+1)}-columns {
+                    $column_width: 100%/2;
+
+                    .mkdf-ig-image {
+                        width: $column_width;
+                    }
+                }
+            }
+
+            $gallery_columns_clear: ('two', 'three', 'four');
+
+            @for $i from 0 to length($gallery_columns_clear) {
+                &.mkdf-ig-#{nth($gallery_columns_clear,$i+1)}-columns {
+
+                    .mkdf-ig-image {
+
+                        @media only screen and (min-width: $phone-landscape-plus-pixel) {
+                            &:nth-child(#{$i+2}n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-ig-masonry {
+            $masonry_columns: ('five', 'six');
+
+            @for $i from 0 to length($masonry_columns) {
+                &.mkdf-ig-#{nth($masonry_columns,$i+1)}-columns {
+                    $column_width: 100%/3;
+
+                    .mkdf-ig-image,
+                    .mkdf-ig-grid-sizer {
+                        width: $column_width;
+                    }
+
+                    .mkdf-ig-image.mkdf-large-masonry-item {
+                        width: $column_width * 2;
+                    }
+                }
+            }
+
+            $masonry_columns_two: ('four');
+
+            @for $i from 0 to length($masonry_columns_two) {
+                &.mkdf-ig-#{nth($masonry_columns_two,$i+1)}-columns {
+                    $column_width: 100%/2;
+
+                    .mkdf-ig-image,
+                    .mkdf-ig-grid-sizer {
+                        width: $column_width;
+                    }
+
+                    .mkdf-ig-image.mkdf-large-masonry-item {
+                        width: $column_width * 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-portrait {
+
+    .mkdf-image-gallery {
+
+        .mkdf-ig-grid {
+            $gallery_columns: ('five', 'six');
+
+            @for $i from 0 to length($gallery_columns) {
+                &.mkdf-ig-#{nth($gallery_columns,$i+1)}-columns {
+                    $column_width: 100%/2;
+
+                    .mkdf-ig-image {
+                        width: $column_width;
+
+                        @media only screen and (min-width: $phone-landscape-plus-pixel) {
+                            &:nth-child(2n+1) {
+                                clear: both;
+                            }
+                        }
+                    }
+                }
+            }
+
+            $gallery_columns_two: ('three');
+
+            @for $i from 0 to length($gallery_columns_two) {
+                &.mkdf-ig-#{nth($gallery_columns_two,$i+1)}-columns {
+
+                    .mkdf-ig-image {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .mkdf-ig-masonry {
+            $masonry_columns: ('five', 'six');
+
+            @for $i from 0 to length($masonry_columns) {
+                &.mkdf-ig-#{nth($masonry_columns,$i+1)}-columns {
+                    $column_width: 100%/2;
+
+                    .mkdf-ig-image,
+                    .mkdf-ig-grid-sizer {
+                        width: $column_width;
+                    }
+
+                    .mkdf-ig-image.mkdf-large-masonry-item {
+                        width: $column_width * 2;
+                    }
+                }
+            }
+
+            $masonry_columns_two: ('three');
+
+            @for $i from 0 to length($masonry_columns_two) {
+                &.mkdf-ig-#{nth($masonry_columns_two,$i+1)}-columns {
+
+                    .mkdf-ig-image,
+                    .mkdf-ig-grid-sizer {
+                        width: 100%;
+                    }
+
+                    .mkdf-ig-image.mkdf-large-masonry-item {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+
+    .mkdf-image-gallery {
+
+        .mkdf-ig-grid {
+            $gallery_columns: ('two', 'three', 'four', 'five', 'six');
+
+            @for $i from 0 to length($gallery_columns) {
+                &.mkdf-ig-#{nth($gallery_columns,$i+1)}-columns {
+
+                    .mkdf-ig-image {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .mkdf-ig-masonry {
+            $masonry_columns: ('two', 'three', 'four', 'five', 'six');
+
+            @for $i from 0 to length($masonry_columns) {
+                &.mkdf-ig-#{nth($masonry_columns,$i+1)}-columns {
+
+                    .mkdf-ig-image,
+                    .mkdf-ig-grid-sizer {
+                        width: 100%;
+                    }
+
+                    .mkdf-ig-image.mkdf-large-masonry-item {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Image Gallery shortcode responsive style - end
+   ========================================================================== */

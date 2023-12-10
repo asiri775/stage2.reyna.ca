@@ -1,0 +1,366 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// booked appointments
+
+.booked-appt-list {
+    $slot-padding: 22px 27px;
+    $nav-height: 30px;
+    $button-height: 38px;
+
+    background-color: $elements-color-one !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: inline-block;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    padding: 0 !important;
+    width: 100%;
+
+    h2 {
+        @include mkdfH4(!important);
+
+        color: $default-text-color !important;
+        margin: $nav-height 0 0 0 !important;
+        padding: $slot-padding !important;
+        text-align: left !important;
+    }
+
+    .booked-list-view-nav {
+        height: $nav-height !important;
+        left: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        position: absolute !important;
+        top: 0 !important;
+
+        .booked-list-view-date-prev,
+        .booked-list-view-date-next,
+        .booked-datepicker-wrap,
+        .booked-datepicker-wrap a {
+            background: transparent;
+            border: none;
+            color: $default-text-color;
+            cursor: pointer;
+            display: block;
+            height: $nav-height;
+            line-height: $nav-height;
+            overflow: hidden;
+            position: absolute !important;
+            text-align: center;
+            text-indent: -999px;
+            top: 0 !important;
+            width: $nav-height;
+
+            i {
+                height: $nav-height;
+                left: 0;
+                line-height: $nav-height;
+                position: absolute;
+                text-indent: 0;
+                top: 0;
+                width: $nav-height;
+            }
+
+            &:hover {
+                background: transparent;
+                color: $first-main-color;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .booked-list-view-date-prev {
+            left: 0 !important;
+        }
+
+        .booked-list-view-date-next {
+            right: 35px !important;
+        }
+
+        .booked-datepicker-wrap a {
+            right: 0 !important;
+        }
+    }
+
+    .booked_list_date_picker_trigger.booked-dp-active {
+        background-color: $first-main-color !important;
+        color: $default-text-color !important;
+    }
+
+    .timeslot {
+        border-top: 1px solid $default-border-color !important;
+        margin: 0 !important;
+        padding: $slot-padding !important;
+
+        &:hover {
+            background-color: transparent !important;
+        }
+
+        .timeslot-time {
+            min-height: #{$button-height + 2px} !important;
+            padding: 0 !important;
+        }
+
+        .timeslot-title {
+            @include mkdfParagraph(!important);
+
+            color: $first-main-color !important;
+            line-height: 1em !important;
+            margin: 0 !important;
+        }
+
+        .timeslot-range {
+            @include mkdfParagraph(!important);
+
+            color: $default-text-color;
+            display: block;
+            line-height: 1em !important;
+            margin: 10px 0;
+        }
+
+        .booked-icon {
+            color: $default-text-color !important;
+        }
+
+        .spots-available {
+            @include mkdfH5(!important);
+
+            color: $default-text-color !important;
+            padding: 0 !important;
+        }
+
+        .timeslot-people {
+            @media (min-width: 720px) {
+                height: #{$button-height + 2px} !important;
+                padding: 0 !important;
+            }
+
+            .booked-calendar-wrap.small & {
+                height: auto !important;
+            }
+        }
+
+        button.button {
+            background-color: $first-main-color !important;
+            border: 1px solid $first-main-color !important;
+            color: #ffffff !important;
+            cursor: pointer;
+
+            .timeslot-mobile-title,
+            .spots-available {
+                color: #ffffff !important;
+
+                @include mkdfParagraph(!important);
+            }
+
+            .button-timeslot {
+                color: #ffffff !important;
+
+                @include mkdfH5(!important);
+            }
+
+            .button-text {
+                font-size: 12px !important;
+                line-height: $button-height !important;
+            }
+
+            @include mkdfTransition(background-color .2s ease-in-out);
+
+            &:hover {
+                background-color: $default-text-color !important;
+                border: 1px solid $default-text-color !important;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        @at-root body table.booked-calendar {
+            .booked-appt-list .timeslot .timeslot-people button.button:hover {
+                background-color: $default-text-color !important;
+                border: 1px solid $default-text-color !important;
+            }
+        }
+    }
+
+    p {
+        color: $default-text-color !important;
+        padding: $slot-padding;
+
+        @include mkdfParagraph(!important);
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// light skin
+
+.mkdf-booked-light {
+    .booked-appt-list {
+        background-color: #ffffff !important;
+
+        h2 {
+            color: $default-text-color !important;
+        }
+
+        .booked-list-view-nav {
+            .booked-list-view-date-prev,
+            .booked-list-view-date-next,
+            .booked-datepicker-wrap,
+            .booked-datepicker-wrap a {
+                color: $default-text-color;
+
+                &:hover {
+                    color: $elements-color-two;
+                }
+            }
+        }
+
+        .booked_list_date_picker_trigger.booked-dp-active {
+            background-color: $default-text-color !important;
+            color: #ffffff !important;
+        }
+
+        .timeslot {
+            .timeslot-title {
+                color: $default-text-color !important;
+            }
+
+            .timeslot-range {
+                color: $default-text-color;
+            }
+
+            .booked-icon {
+                color: $default-text-color !important;
+            }
+
+            .spots-available {
+                color: $elements-color-three !important;
+            }
+
+            button.button {
+                background-color: $default-text-color !important;
+                border: 1px solid $default-text-color !important;
+                color: #ffffff !important;
+
+                .timeslot-mobile-title,
+                .spots-available {
+                    color: #ffffff !important;
+                }
+
+                .button-timeslot {
+                    color: #ffffff !important;
+                }
+
+                &:hover {
+                    background-color: #ffffff !important;
+                    color: $default-text-color !important;
+
+                    .timeslot-mobile-title,
+                    .spots-available,
+                    .button-timeslot {
+                        color: $default-text-color !important;
+                    }
+                }
+            }
+
+            @at-root body .mkdf-booked-light table.booked-calendar {
+                .booked-appt-list .timeslot .timeslot-people button.button:hover {
+                    background-color: #ffffff !important;
+                    border: 1px solid $default-text-color !important;
+                }
+            }
+        }
+
+        p {
+            color: $default-text-color !important;
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// dark skin
+
+.mkdf-booked-dark {
+    .booked-appt-list {
+        background-color: $default-text-color !important;
+
+        h2 {
+            color: #ffffff !important;
+        }
+
+        .booked-list-view-nav {
+            .booked-list-view-date-prev,
+            .booked-list-view-date-next,
+            .booked-datepicker-wrap,
+            .booked-datepicker-wrap a {
+                color: #ffffff;
+
+                &:hover {
+                    color: $elements-color-two;
+                }
+            }
+        }
+
+        .booked_list_date_picker_trigger.booked-dp-active {
+            background-color: #ffffff !important;
+            color: $default-text-color !important;
+        }
+
+        .timeslot {
+            .timeslot-title {
+                color: #ffffff !important;
+            }
+
+            .timeslot-range {
+                color: #ffffff;
+            }
+
+            .booked-icon {
+                color: #ffffff !important;
+            }
+
+            .spots-available {
+                color: #ffffff !important;
+            }
+
+            button.button {
+                background-color: #ffffff !important;
+                border: 1px solid #ffffff !important;
+                color: $default-text-color !important;
+
+                .timeslot-mobile-title,
+                .spots-available {
+                    color: $default-text-color !important;
+                }
+
+                .button-timeslot {
+                    color: $default-text-color !important;
+                }
+
+                &:hover {
+                    background-color: $default-text-color !important;
+                    color: #ffffff !important;
+
+                    .timeslot-mobile-title,
+                    .spots-available,
+                    .button-timeslot {
+                        color: #ffffff !important;
+                    }
+                }
+            }
+
+            @at-root body .mkdf-booked-dark table.booked-calendar {
+                .booked-appt-list .timeslot .timeslot-people button.button:hover {
+                    background-color: $default-text-color !important;
+                    border: 1px solid #ffffff !important;
+                }
+            }
+        }
+
+        p {
+            color: #ffffff !important;
+        }
+    }
+}

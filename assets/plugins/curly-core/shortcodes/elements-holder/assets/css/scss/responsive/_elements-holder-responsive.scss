@@ -1,0 +1,209 @@
+/* ==========================================================================
+   Elements Holder shortcode responsive style - begin
+   ========================================================================== */
+
+.mkdf-elements-holder {
+    $columns_label: ('two', 'three', 'four', 'five', 'six');
+
+    @include laptop-landscape-mac {
+        &.mkdf-responsive-mode-1366 {
+            @for $i from 0 to length($columns_label) {
+                &.mkdf-#{nth($columns_label,$i+1)}-columns {
+
+                    .mkdf-eh-item {
+                        width: 100%;
+                        height: auto;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-left {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: left;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-right {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: right;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-center {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    @include ipad-landscape {
+        &.mkdf-responsive-mode-1024 {
+            @for $i from 0 to length($columns_label) {
+                &.mkdf-#{nth($columns_label,$i+1)}-columns {
+
+                    .mkdf-eh-item {
+                        width: 100%;
+                        height: auto;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-left {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: left;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-right {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: right;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-center {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    @include ipad-portrait {
+        &.mkdf-responsive-mode-768 {
+            @for $i from 0 to length($columns_label) {
+                &.mkdf-#{nth($columns_label,$i+1)}-columns {
+
+                    .mkdf-eh-item {
+                        width: 100%;
+                        height: auto;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-left {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: left;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-right {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: right;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-center {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    @include phone-landscape {
+        &.mkdf-responsive-mode-680 {
+            @for $i from 0 to length($columns_label) {
+                &.mkdf-#{nth($columns_label,$i+1)}-columns {
+                    .mkdf-eh-item {
+                        width: 100%;
+                        height: auto;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-left {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: left;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-right {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: right;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-center {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    @include phone-portrait {
+        &.mkdf-responsive-mode-480 {
+            @for $i from 0 to length($columns_label) {
+                &.mkdf-#{nth($columns_label,$i+1)}-columns {
+
+                    .mkdf-eh-item {
+                        width: 100%;
+                        height: auto;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-left {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: left;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-right {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: right;
+                    }
+                }
+            }
+
+            &.mkdf-one-column-alignment-center {
+                .mkdf-eh-item {
+                    .mkdf-eh-item-content {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        //.mkdf-eh-item-content {
+        //    padding: 0 10px;
+        //}
+    }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode responsive style - end
+   ========================================================================== */

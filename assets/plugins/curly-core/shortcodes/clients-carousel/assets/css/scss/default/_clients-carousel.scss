@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+
+.mkdf-clients-carousel-holder {
+    @include mkdfRelativeHolderLayout();
+
+    .mkdf-cc-inner {
+        @include mkdfRelativeHolderLayout();
+    }
+
+    .mkdf-cc-item {
+        @include mkdfRelativeHolderLayout();
+
+        .touchevents & {
+            cursor: pointer;
+        }
+
+        .mkdf-cc-item {
+            position: relative;
+            display: block;
+        }
+    }
+
+    /***** Hover Types - begin *****/
+
+    &.mkdf-cc-hover-switch-images {
+
+        .mkdf-cc-item {
+
+            &:hover {
+
+                .mkdf-cc-image {
+                    opacity: 0;
+                }
+
+                .mkdf-cc-hover-image {
+                    opacity: 1;
+                }
+            }
+
+            .mkdf-cc-image {
+                position: relative;
+                display: block;
+                width: auto;
+                margin: 0 auto;
+                opacity: 1;
+                @include mkdfTransition(opacity .15s ease-out);
+            }
+
+            .mkdf-cc-hover-image {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: auto;
+                opacity: 0;
+                @include mkdfTransform(translateX(-50%));
+                @include mkdfTransition(opacity .15s ease-out);
+            }
+        }
+    }
+
+    &.mkdf-cc-hover-roll-over {
+
+        .mkdf-cc-item {
+            overflow: hidden;
+
+            &:hover {
+
+                .mkdf-cc-image {
+                    @include mkdfTransform(translateY(100%));
+                }
+
+                .mkdf-cc-hover-image {
+                    @include mkdfTransform(translate(-50%, 0));
+                }
+            }
+
+            .mkdf-cc-image {
+                position: relative;
+                display: block;
+                width: auto;
+                margin: 0 auto;
+                @include mkdfTransitionTransform(.4s ease);
+            }
+
+            .mkdf-cc-hover-image {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: auto;
+                @include mkdfTransform(translate(-50%, -100%));
+                @include mkdfTransitionTransform(.4s ease);
+            }
+        }
+    }
+
+    /***** Hover Types - end *****/
+}
+
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */

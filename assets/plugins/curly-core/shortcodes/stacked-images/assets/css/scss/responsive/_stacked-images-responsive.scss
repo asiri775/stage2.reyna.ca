@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Stacked Images responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-mac {
+    .mkdf-stacked-images-holder {
+        &.mkdf-si-position-left {
+            .mkdf-si-images {
+                margin: 0 160px 130px 0;
+
+                .mkdf-si-stack-image {
+                    left: 160px;
+                }
+            }
+        }
+
+        &.mkdf-si-position-right {
+            .mkdf-si-images {
+                margin: 0 0 130px 160px;
+
+                .mkdf-si-stack-image {
+                    right: 160px;
+                }
+            }
+        }
+
+        .mkdf-si-images {
+            &.mkdf-appeared {
+                .mkdf-si-stack-image {
+                    top: 130px;
+                }
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+    .mkdf-stacked-images-holder {
+        &.mkdf-si-position-left {
+            .mkdf-si-images {
+                margin: 0 80px 30px 0;
+
+                .mkdf-si-stack-image {
+                    left: 80px;
+                }
+            }
+        }
+
+        &.mkdf-si-position-right {
+            .mkdf-si-images {
+                margin: 0 0 30px 80px;
+
+                .mkdf-si-stack-image {
+                    right: 80px;
+                }
+            }
+        }
+
+        .mkdf-si-images {
+            &.mkdf-appeared {
+                .mkdf-si-stack-image {
+                    top: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Stacked Images responsive style - end
+   ========================================================================== */

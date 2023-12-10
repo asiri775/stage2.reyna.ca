@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+  .mkdf-twitter-list-holder.mkdf-tl-four-columns .mkdf-tl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkdf-twitter-list-holder.mkdf-tl-four-columns .mkdf-tl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mkdf-twitter-list-holder.mkdf-tl-five-columns .mkdf-tl-item {
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+  .mkdf-twitter-list-holder.mkdf-tl-five-columns .mkdf-tl-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-twitter-list-holder.mkdf-tl-three-columns .mkdf-tl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-twitter-list-holder.mkdf-tl-three-columns .mkdf-tl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-twitter-list-holder.mkdf-tl-four-columns .mkdf-tl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-twitter-list-holder.mkdf-tl-four-columns .mkdf-tl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-twitter-list-holder.mkdf-tl-five-columns .mkdf-tl-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 681px) {
+  .mkdf-twitter-list-holder.mkdf-tl-five-columns .mkdf-tl-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-twitter-list-holder .mkdf-tl-item {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=../../../../plugins/curly-twitter-feed/assets/css/shortcodes-map-responsive.css.map */

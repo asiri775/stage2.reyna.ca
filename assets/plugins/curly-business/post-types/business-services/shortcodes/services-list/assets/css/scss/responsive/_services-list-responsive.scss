@@ -1,0 +1,43 @@
+/* ==========================================================================
+# Business Menu List responsive style - begin
+========================================================================== */
+.mkdf-bsl-holder {
+    @include phone-landscape() {
+        .mkdf-bsl-item-line {
+            display: none;
+        }
+
+        .mkdf-bsl-item-price-holder {
+            text-align: right;
+        }
+
+        .mkdf-bsl-item-label-holder {
+            float: none;
+            text-align: left;
+            width: 80%;
+            top: 10px;
+        }
+
+        .mkdf-bsl-item-title-holder {
+            width: 80%;
+            white-space: normal;
+        }
+    }
+
+    &.mkdf-bsl-with-image {
+        @include phone-landscape() {
+
+            .mkdf-bsl-item-image {
+                display: none;
+            }
+
+            .mkdf-bsl-item-content {
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Business Menu List responsive style - end
+========================================================================== */

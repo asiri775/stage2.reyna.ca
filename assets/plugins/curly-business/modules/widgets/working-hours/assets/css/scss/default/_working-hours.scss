@@ -1,0 +1,16 @@
+.widget {
+    .mkdf-wh-holder {
+        .mkdf-wh-item {
+            border: 0;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mkdf-wh-day,
+        .mkdf-wh-hours {
+            color: inherit;
+            line-height: inherit;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+
+.mkdf-testimonials-holder {
+    text-align: center;
+
+    @include mkdfRelativeHolderLayout();
+
+    .mkdf-testimonials,
+    .mkdf-testimonial-content,
+    .mkdf-testimonial-text-holder {
+        @include mkdfRelativeHolderLayout();
+    }
+
+    .mkdf-testimonials {
+        box-sizing: border-box;
+        padding: 0 50px;
+    }
+
+    .mkdf-testimonials-background-text {
+        color: $first-main-color;
+        font-size: 226px;
+        left: 50%;
+        line-height: 1em;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        z-index: 0;
+        opacity:0;
+        @include mkdfTransform(translateX(-50%));
+        @include mkdfTransition(opacity .3s ease-out .1s);
+
+        &.mkdf-background-text-appeared {
+            opacity:.2;
+        }
+    }
+
+    .mkdf-testimonials-mark {
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 90px;
+        margin-bottom: -12px;
+    }
+
+    .mkdf-testimonial-title {
+        margin-bottom: 26px;
+    }
+
+    .mkdf-testimonial-text {
+        margin-bottom: 37px;
+    }
+
+    .owl-dots {
+        margin-top: 36px;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // skin
+
+    &.mkdf-light {
+        .mkdf-testimonials-mark,
+        .mkdf-testimonial-title,
+        .mkdf-testimonial-text,
+        .mkdf-testimonial-author {
+            color: #fff;
+        }
+
+        .owl-nav {
+            .owl-next,
+            .owl-prev {
+                color: #ffffff;
+
+                &:hover {
+                    color: $first-main-color;
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    span {
+                        background-color: #4f4f4f;
+                    }
+
+                    &:hover,
+                    &.active {
+                        span {
+                            background-color: #989898;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.mkdf-dark {
+            .mkdf-testimonials-mark,
+            .mkdf-testimonial-title,
+            .mkdf-testimonial-text,
+            .mkdf-testimonial-author {
+                color: $default-text-color;
+            }
+
+        }
+    }
+}
+
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */

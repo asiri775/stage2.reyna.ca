@@ -1,0 +1,378 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// booked calendar
+
+body {
+    table.booked-calendar {
+        background-color: $first-main-color;
+        border: 1px solid $first-main-color !important;
+
+        thead th {
+            border: none !important;
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // th
+
+        th,
+        thead th,
+        thead tr {
+            background-color: $first-main-color !important;
+
+            .page-right,
+            .page-left {
+                color: $default-text-color !important;
+            }
+        }
+
+        thead {
+            background-color: $first-main-color !important;
+
+            th {
+                @include mkdfParagraph(!important);
+            }
+        }
+
+        .calendarSavingState {
+            color: $default-text-color;
+        }
+
+        .monthName {
+            @include mkdfH5(!important);
+
+            color: $default-text-color !important;
+
+            .backToMonth {
+                display: none;
+            }
+        }
+
+        @at-root body .large {
+            table.booked-calendar {
+                .monthName {
+                    @include mkdfH4(!important);
+                }
+            }
+        }
+
+        .page-left,
+        .page-right {
+            margin-top: -1rem !important;
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // tr
+
+        tr {
+            border: none;
+            background: #ffffff;
+        }
+
+        tbody {
+            background: #ffffff;
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // list within calendar
+
+        tr.entryBlock {
+            background-color: transparent;
+
+            td {
+                padding: 0 !important;
+
+                h2 {
+                    margin: 0 !important;
+                }
+            }
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // days
+
+        tr.days {
+            background: transparent !important;
+            text-transform: none;
+
+            th {
+                background: transparent !important;
+                border: none !important;
+                color: $default-text-color !important;
+            }
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // td
+
+        td {
+            background: #ffffff;
+            border: none !important;
+            color: $default-text-color;
+            font-size: 1rem;
+
+            .date {
+                background: transparent !important;
+
+                .number {
+                    border-radius: 0;
+                }
+            }
+
+            // active
+            &.active {
+                background-color: transparent !important;
+
+                .date {
+                    background-color: $elements-color-one !important;
+
+                    .number {
+                        background-color: $elements-color-one !important;
+                        color: $default-text-color !important;
+                        transform: scale(1) !important;
+                    }
+                }
+            }
+
+            // prev and next month
+            &.next-month .date,
+            &.prev-month .date {
+                background: transparent;
+
+                span {
+                    color: $default-text-color;
+                }
+            }
+
+            // today
+            &.today {
+                .date span {
+                    background: $first-main-color !important;
+                    border: none !important;
+                    color: $default-text-color !important;
+                }
+
+                &:hover {
+                    .date span {
+                        background: $first-main-color !important;
+                        border: none !important;
+                        color: #ffffff !important;
+                    }
+                }
+            }
+
+            // illegible date
+            &.prev-date .date,
+            &.prev-date .date span,
+            &.prev-date:hover .date,
+            &.prev-date:hover .date span {
+                background: transparent !important;
+                color: $elements-color-two !important;
+            }
+
+            &:hover {
+                .date span {
+                    background-color: $first-main-color;
+                }
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// light skin
+
+body {
+    .mkdf-booked-light {
+        table.booked-calendar {
+            background-color: #ffffff;
+            border: 1px solid #ffffff !important;
+
+            th,
+            thead th,
+            thead tr {
+                background-color: #ffffff !important;
+
+                .page-right,
+                .page-left {
+                    color: $default-text-color !important;
+                }
+            }
+
+            .calendarSavingState {
+                color: $default-text-color;
+            }
+
+            .monthName {
+                color: $default-text-color !important;
+            }
+
+            tr,
+            tbody {
+                background: $default-text-color;
+            }
+
+            thead tr.days {
+                background: $default-text-color !important;
+
+                th {
+                    background: $default-text-color !important;
+                    color: $elements-color-three !important;
+                }
+            }
+
+            td {
+                background: $default-text-color;
+                color: #ffffff;
+
+                // active
+                &.active {
+                    .date {
+                        background-color: #ffffff !important;
+
+                        .number {
+                            background-color: #ffffff !important;
+                            color: $default-text-color !important;
+                        }
+                    }
+                }
+
+                // prev and next month
+                &.next-month .date,
+                &.prev-month .date {
+                    span {
+                        color: #ffffff;
+                    }
+                }
+
+                // today
+                &.today {
+                    .date span {
+                        background: $elements-color-three !important;
+                        color: $default-text-color !important;
+                    }
+
+                    &:hover {
+                        .date span {
+                            background: $elements-color-three !important;
+                            color: #ffffff !important;
+                        }
+                    }
+                }
+
+                // illegible date
+                &.prev-date .date,
+                &.prev-date .date span,
+                &.prev-date:hover .date,
+                &.prev-date:hover .date span {
+                    background: transparent !important;
+                    color: $elements-color-three !important;
+                }
+
+                &:hover {
+                    .date span {
+                        background-color: $elements-color-three;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// dark skin
+
+body {
+    .mkdf-booked-dark {
+        table.booked-calendar {
+            background-color: $default-text-color;
+            border: 1px solid $default-text-color !important;
+
+            th,
+            thead th,
+            thead tr {
+                background-color: $default-text-color !important;
+
+                .page-right,
+                .page-left {
+                    color: #ffffff !important;
+                }
+            }
+
+            .calendarSavingState {
+                color: #ffffff;
+            }
+
+            .monthName {
+                color: #ffffff !important;
+            }
+
+            tr,
+            tbody {
+                background: #ffffff;
+            }
+
+            thead tr.days {
+                background: #ffffff !important;
+
+                th {
+                    background: #ffffff !important;
+                    color: $elements-color-three !important;
+                }
+            }
+
+            td {
+                background: #ffffff;
+                color: $default-text-color;
+
+                &.active {
+                    .date {
+                        background-color: $default-text-color !important;
+
+                        .number {
+                            background-color: $default-text-color !important;
+                            color: #ffffff !important;
+                        }
+                    }
+                }
+
+                &.next-month .date,
+                &.prev-month .date {
+                    span {
+                        color: $default-text-color;
+                    }
+                }
+
+                // today
+                &.today {
+                    .date span {
+                        background: $elements-color-three !important;
+                        color: $elements-color-two !important;
+                    }
+
+                    &:hover {
+                        .date span {
+                            background: $elements-color-three !important;
+                            color: #ffffff !important;
+                        }
+                    }
+                }
+
+                // illegible date
+                &.prev-date .date,
+                &.prev-date .date span,
+                &.prev-date:hover .date,
+                &.prev-date:hover .date span {
+                    background: transparent !important;
+                    color: $elements-color-two !important;
+                }
+
+                &:hover {
+                    .date span {
+                        background-color: $elements-color-three;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

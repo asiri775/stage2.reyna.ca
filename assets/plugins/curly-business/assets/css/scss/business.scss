@@ -1,0 +1,19 @@
+/* Global Variables */
+@import '../../../../../themes/curly/assets/css/scss/variables';
+@import '../../../../../themes/curly/assets/css/scss/mixins';
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+@import '../../../post-types/**/assets/css/scss/default/**/*.scss';
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+@import '../../../modules/shortcodes/**/assets/css/scss/default/*.scss';
+/* ==========================================================================
+   Widget styles
+   ========================================================================== */
+@import '../../../modules/widgets/**/assets/css/scss/default/*.scss';
+/* ==========================================================================
+   Booked Modules styles
+   ========================================================================== */
+@import '../../../modules/booked-appointments/**/assets/css/scss/default/*.scss';

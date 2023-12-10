@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder {
+    &.mkdf-ps-masonry-layout {
+        .mkdf-ps-image-holder {
+            .mkdf-ps-image-inner {
+                opacity: 0;
+            }
+        }
+
+        > .mkdf-grid-row {
+            margin-top: 40px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - end
+   ========================================================================== */

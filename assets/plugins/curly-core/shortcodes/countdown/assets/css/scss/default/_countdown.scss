@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Countdown shortcode style - begin
+   ========================================================================== */
+
+.mkdf-countdown {
+    @include mkdfRelativeHolderLayout();
+
+    .countdown-rtl {
+        direction: rtl;
+    }
+
+    .countdown-row {
+        @include mkdfRelativeHolderLayout();
+
+        clear: both;
+        text-align: center;
+
+        $columns_label: ('countdown-show1', 'countdown-show2', 'countdown-show3', 'countdown-show4', 'countdown-show5', 'countdown-show6');
+
+        @for $i from 0 to length($columns_label) {
+            &.#{nth($columns_label, $i+1)} {
+                $column_width: 100% / ($i+1);
+
+                .countdown-section {
+                    width: $column_width;
+                }
+            }
+        }
+
+        .countdown-section {
+            @include mkdfRelativeHolderLayout();
+
+            box-sizing: border-box;
+            padding: 0 5px;
+
+            .countdown-amount {
+                color: $default-text-color;
+                display: block;
+                font-size: 45px;
+                font-weight: 700;
+                letter-spacing: 0.025em;
+                line-height: 1em;
+                position: relative;
+            }
+
+            .countdown-period {
+                display: block;
+                margin-top: 20px;
+
+                @include mkdfH5();
+            }
+        }
+    }
+
+    &.mkdf-light {
+        .countdown-row {
+            .countdown-section {
+                .countdown-amount {
+                    color: #ffffff;
+                }
+
+                .countdown-period {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Countdown shortcode style - end
+   ========================================================================== */

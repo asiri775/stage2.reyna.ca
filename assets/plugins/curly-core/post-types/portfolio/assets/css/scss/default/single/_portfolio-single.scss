@@ -1,0 +1,141 @@
+/* ==========================================================================
+   Portfolio Single page style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder {
+    @include mkdfRelativeHolderLayout();
+
+    margin: 0 0 50px;
+
+    .mkdf-ps-image-holder {
+        @include mkdfRelativeHolderLayout();
+
+        .mkdf-ps-image {
+            @include mkdfRelativeHolderLayout();
+
+            box-sizing: border-box;
+
+            a, img {
+                display: block;
+                position: relative;
+            }
+        }
+    }
+
+    .mkdf-ps-info-holder {
+        @include mkdfRelativeHolderLayout();
+
+        .mkdf-ps-info-item {
+            @include mkdfRelativeHolderLayout();
+
+            margin: 0 0 33px;
+
+            p, a {
+                margin: 0;
+            }
+        }
+
+        .mkdf-ps-info-title {
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Single page style - end
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-holder {
+    .mkdf-ps-image-holder {
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // gallery images
+
+        &.mkdf-ps-gallery-images {
+            $columns_number: ('two', 'three', 'four');
+
+            @for $i from 0 to length($columns_number) {
+                &.mkdf-ps-#{nth($columns_number,$i+1)}-columns {
+                    .mkdf-ps-image {
+                        width: 100% / ($i+2);
+                    }
+                    @if ($i > 1) { // set different break point for four columns
+                        @media only screen and (min-width: $laptop-landscape-plus-pixel) {
+                            .mkdf-ps-image {
+                                &:nth-child(#{$i+2}n+1) {
+                                    clear: both;
+                                }
+                            }
+                        }
+                    } @else {
+                        @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+                            .mkdf-ps-image {
+                                &:nth-child(#{$i+2}n+1) {
+                                    clear: both;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // masonry images
+
+        &.mkdf-ps-masonry-images {
+            .mkdf-ps-image,
+            .mkdf-ps-grid-sizer {
+                width: 25%;
+            }
+
+            .mkdf-ps-grid-gutter {
+                width: 0;
+            }
+
+            .mkdf-masonry-size-small,
+            .mkdf-masonry-size-large-width-height,
+            .mkdf-masonry-size-large-height,
+            .mkdf-masonry-size-large-width {
+                &.mkdf-ps-image {
+                    a,
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+
+            .mkdf-masonry-size-large-width {
+                img {
+                    width: 100%;
+                }
+            }
+
+            $columns_number: ('two', 'three', 'four');
+
+            @for $i from 0 to length($columns_number) {
+                &.mkdf-ps-#{nth($columns_number,$i+1)}-columns {
+                    $column_width: 100%/($i+2);
+
+                    .mkdf-ps-image,
+                    .mkdf-ps-grid-sizer {
+                        width: $column_width;
+                    }
+
+                    .mkdf-ps-image.mkdf-masonry-size-large-width,
+                    .mkdf-ps-image.mkdf-masonry-size-large-width-height {
+                        width: $column_width * 2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - end
+   ========================================================================== */

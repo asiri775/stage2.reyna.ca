@@ -1,0 +1,84 @@
+.mkdf-top-reviews-carousel-holder {
+    @include mkdfRelativeHolderLayout();
+    background-color: #fff;
+    border: 1px solid $default-border-color;
+
+    .mkdf-top-reviews-carousel-inner {
+        @include mkdfRelativeHolderLayout();
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .mkdf-top-reviews-carousel-title {
+        margin: 0 0 22px;
+    }
+
+    .mkdf-top-reviews-carousel {
+        @include mkdfRelativeHolderLayout();
+        visibility: hidden;
+    }
+
+    .mkdf-top-reviews-carousel-item {
+        @include mkdfRelativeHolderLayout();
+    }
+
+    .mkdf-top-reviews-item-title {
+        margin: 0 0 2px;
+    }
+
+    .mkdf-tour-reviews-criteria-holder {
+        display: block;
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    .mkdf-top-reviews-item-content {
+        margin: 20px 0 0;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .mkdf-top-reviews-item-author-info {
+        @include mkdfRelativeHolderLayout();
+        margin: 32px 0 0;
+        padding: 0 100px 0 0;
+        box-sizing: border-box;
+    }
+
+    .mkdf-top-reviews-item-author-avatar {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 21px 0 0;
+
+        img {
+            display: block;
+            border-radius: 50%;
+        }
+    }
+
+    .mkdf-top-reviews-item-author-name {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+    .owl-nav {
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+        width: 60px;
+
+        .owl-prev {
+            left: 0;
+        }
+
+        .owl-next {
+            right: 0;
+        }
+    }
+}

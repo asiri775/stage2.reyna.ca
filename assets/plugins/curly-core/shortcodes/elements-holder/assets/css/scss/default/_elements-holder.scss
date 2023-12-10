@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+
+.mkdf-elements-holder {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+
+    &.mkdf-eh-full-height {
+        height: 100%;
+    }
+
+    &.mkdf-ehi-float {
+        .mkdf-eh-item {
+            float: left;
+        }
+    }
+
+    .mkdf-eh-item-inner a:not(.mkdf-btn) {
+        @include mkdfTransition(all .1s ease-out);
+
+        span {
+            @include mkdfTransition(all .1s ease-out);
+        }
+    }
+
+    $columns_label: ('two', 'three', 'four', 'five', 'six');
+
+    @for $i from 0 to length($columns_label) {
+        &.mkdf-#{nth($columns_label,$i+1)}-columns {
+            $column_width: 100%/($i+2);
+
+            .mkdf-eh-item {
+                width: $column_width;
+            }
+        }
+    }
+
+    .mkdf-eh-item {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+
+        &.mkdf-vertical-alignment-top {
+            vertical-align: top;
+        }
+
+        &.mkdf-vertical-alignment-bottom {
+            vertical-align: bottom;
+        }
+
+        &.mkdf-horizontal-alignment-center {
+            text-align: center;
+        }
+
+        &.mkdf-horizontal-alignment-right {
+            text-align: right;
+        }
+
+        .mkdf-elements-holder-item-inner {
+            width: 100%;
+        }
+    }
+
+    .mkdf-ehi-content {
+        padding: 0 20px;
+    }
+}
+
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */

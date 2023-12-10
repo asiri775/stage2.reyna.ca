@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-single-navigation {
+    $arrow-size: 20px;
+    $arrow-distance: 10px;
+    $text-distance: 47px;
+
+    box-sizing: border-box;
+    margin-top: 73px;
+
+    @include mkdfTableLayout();
+
+    .mkdf-portfolio-single-prev,
+    .mkdf-portfolio-single-back,
+    .mkdf-portfolio-single-next {
+        @include mkdfTableCellLayout();
+
+        width: calc(100% / 3);
+    }
+
+    .mkdf-portfolio-single-back {
+        text-align: center;
+
+        a {
+            font-size: 30px;
+        }
+    }
+
+    .mkdf-portfolio-single-prev,
+    .mkdf-portfolio-single-next {
+        a {
+            box-sizing: border-box;
+
+            @include mkdfRelativeHolderLayout();
+        }
+    }
+
+    .mkdf-arrow {
+        background-color: currentColor;
+        color: inherit;
+        display: block;
+        height: $arrow-size;
+        width: $arrow-size;
+        position: absolute;
+        top: 50%;
+
+        @include mkdfMaskImage('../img/arrow.svg');
+    }
+
+    .mkdf-portfolio-single-prev {
+        left: 0;
+        text-align: left;
+
+        a {
+            padding-left: $text-distance;
+        }
+
+        .mkdf-arrow {
+            left: $arrow-distance;
+
+            @include mkdfTransform(scaleX(-1) translateY(-50%));
+        }
+    }
+
+    .mkdf-portfolio-single-next {
+        right: 0;
+        text-align: right;
+
+        a {
+            padding-right: $text-distance;
+        }
+
+        .mkdf-arrow {
+            right: $arrow-distance;
+
+            @include mkdfTransform(translateY(-50%));
+        }
+    }
+
+    .mkdf-title {
+        color: inherit;
+        margin-bottom: 6px;
+    }
+
+    .mkdf-label {
+        color: inherit;
+    }
+}
+
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */

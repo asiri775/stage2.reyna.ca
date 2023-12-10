@@ -1,0 +1,1357 @@
+/* Global Variables */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+/* ==========================================================================
+# Business Services List style - begin
+========================================================================== */
+.mkdf-bsl-holder ul {
+  list-style-type: none;
+}
+
+.mkdf-bsl-holder ul li {
+  margin-bottom: 20px;
+}
+
+.mkdf-bsl-holder ul li:last-child {
+  margin-bottom: 0;
+}
+
+.mkdf-bsl-holder .mkdf-bsl-item-title-holder {
+  display: table-cell;
+  width: 1%;
+  white-space: nowrap;
+  padding-right: 5px;
+}
+
+.mkdf-bsl-holder .mkdf-bsl-item-line {
+  height: 3px;
+  border-bottom: 1px solid #afaaa9;
+  display: table-cell;
+  width: 98%;
+  z-index: 1;
+  position: relative;
+  bottom: 9px;
+}
+
+.mkdf-bsl-holder .mkdf-bsl-item-price-holder {
+  display: table-cell;
+  width: 1%;
+  padding-left: 7px;
+  white-space: nowrap;
+}
+
+.mkdf-bsl-holder .mkdf-bsl-item-bottom-holder {
+  position: relative;
+  top: 3px;
+}
+
+.mkdf-bsl-holder .mkdf-bsl-item-description-holder {
+  color: #c59d5f;
+  float: left;
+  width: 70%;
+  line-height: 1.2em;
+}
+
+.mkdf-bsl-holder .mkdf-bsl-item-label-holder {
+  float: right;
+  position: relative;
+  width: 30%;
+  text-align: right;
+}
+
+.mkdf-bsl-holder .mkdf-bsl-item-label-holder .mkdf-bsl-item-label {
+  background-color: #c59d5f;
+  color: #000000;
+  font-style: italic;
+  padding: 3px 13px;
+  text-align: center;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-with-image .mkdf-bsl-item-content {
+  padding-left: 110px;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-with-image .mkdf-bsl-item-image {
+  float: left;
+  width: 83px;
+  position: relative;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-with-image .mkdf-bsl-item-image a {
+  display: block;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-with-image .mkdf-bsl-item-image img {
+  vertical-align: middle;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-light .mkdf-bsl-item-title {
+  color: #ffffff;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-light .mkdf-bsl-item-line {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.mkdf-bsl-holder.mkdf-bsl-light .mkdf-bsl-item-price-holder {
+  color: #ffffff;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-light .mkdf-bsl-item-description-holder {
+  color: #ffffff;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-light .mkdf-bsl-item-label-holder .mkdf-bsl-item-label {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-dark .mkdf-bsl-item-title {
+  color: #000000;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-dark .mkdf-bsl-item-line {
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+.mkdf-bsl-holder.mkdf-bsl-dark .mkdf-bsl-item-price-holder {
+  color: #000000;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-dark .mkdf-bsl-item-description-holder {
+  color: #000000;
+}
+
+.mkdf-bsl-holder.mkdf-bsl-dark .mkdf-bsl-item-label-holder .mkdf-bsl-item-label {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+# Business Services List style - end
+========================================================================== */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+.booked-appt-list {
+  background-color: #f7f8f9 !important;
+  border-radius: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  display: inline-block;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+.booked-appt-list h2 {
+  color: #000000;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.025em !important;
+  line-height: 1.5em !important;
+  text-transform: uppercase !important;
+  color: #000000 !important;
+  margin: 30px 0 0 0 !important;
+  padding: 22px 27px !important;
+  text-align: left !important;
+}
+
+.booked-appt-list h2 a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.booked-appt-list h2 a:hover {
+  color: #c59d5f;
+}
+
+.booked-appt-list .booked-list-view-nav {
+  height: 30px !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.booked-appt-list .booked-list-view-nav .booked-list-view-date-prev,
+.booked-appt-list .booked-list-view-nav .booked-list-view-date-next,
+.booked-appt-list .booked-list-view-nav .booked-datepicker-wrap,
+.booked-appt-list .booked-list-view-nav .booked-datepicker-wrap a {
+  background: transparent;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  position: absolute !important;
+  text-align: center;
+  text-indent: -999px;
+  top: 0 !important;
+  width: 30px;
+}
+
+.booked-appt-list .booked-list-view-nav .booked-list-view-date-prev i,
+.booked-appt-list .booked-list-view-nav .booked-list-view-date-next i,
+.booked-appt-list .booked-list-view-nav .booked-datepicker-wrap i,
+.booked-appt-list .booked-list-view-nav .booked-datepicker-wrap a i {
+  height: 30px;
+  left: 0;
+  line-height: 30px;
+  position: absolute;
+  text-indent: 0;
+  top: 0;
+  width: 30px;
+}
+
+.booked-appt-list .booked-list-view-nav .booked-list-view-date-prev:hover,
+.booked-appt-list .booked-list-view-nav .booked-list-view-date-next:hover,
+.booked-appt-list .booked-list-view-nav .booked-datepicker-wrap:hover,
+.booked-appt-list .booked-list-view-nav .booked-datepicker-wrap a:hover {
+  background: transparent;
+  color: #c59d5f;
+}
+
+.booked-appt-list .booked-list-view-nav .booked-list-view-date-prev:focus,
+.booked-appt-list .booked-list-view-nav .booked-list-view-date-next:focus,
+.booked-appt-list .booked-list-view-nav .booked-datepicker-wrap:focus,
+.booked-appt-list .booked-list-view-nav .booked-datepicker-wrap a:focus {
+  outline: none;
+}
+
+.booked-appt-list .booked-list-view-nav .booked-list-view-date-prev {
+  left: 0 !important;
+}
+
+.booked-appt-list .booked-list-view-nav .booked-list-view-date-next {
+  right: 35px !important;
+}
+
+.booked-appt-list .booked-list-view-nav .booked-datepicker-wrap a {
+  right: 0 !important;
+}
+
+.booked-appt-list .booked_list_date_picker_trigger.booked-dp-active {
+  background-color: #c59d5f !important;
+  color: #000000 !important;
+}
+
+.booked-appt-list .timeslot {
+  border-top: 1px solid #afaaa9 !important;
+  margin: 0 !important;
+  padding: 22px 27px !important;
+}
+
+.booked-appt-list .timeslot:hover {
+  background-color: transparent !important;
+}
+
+.booked-appt-list .timeslot .timeslot-time {
+  min-height: 40px !important;
+  padding: 0 !important;
+}
+
+.booked-appt-list .timeslot .timeslot-title {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  letter-spacing: normal !important;
+  line-height: 1.75em !important;
+  text-transform: none !important;
+  color: #c59d5f !important;
+  line-height: 1em !important;
+  margin: 0 !important;
+}
+
+.booked-appt-list .timeslot .timeslot-range {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  letter-spacing: normal !important;
+  line-height: 1.75em !important;
+  text-transform: none !important;
+  color: #000000;
+  display: block;
+  line-height: 1em !important;
+  margin: 10px 0;
+}
+
+.booked-appt-list .timeslot .booked-icon {
+  color: #000000 !important;
+}
+
+.booked-appt-list .timeslot .spots-available {
+  color: #000000;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.25em !important;
+  line-height: 1.33em !important;
+  text-transform: uppercase !important;
+  color: #000000 !important;
+  padding: 0 !important;
+}
+
+.booked-appt-list .timeslot .spots-available a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.booked-appt-list .timeslot .spots-available a:hover {
+  color: #c59d5f;
+}
+
+@media (min-width: 720px) {
+  .booked-appt-list .timeslot .timeslot-people {
+    height: 40px !important;
+    padding: 0 !important;
+  }
+}
+
+.booked-calendar-wrap.small .booked-appt-list .timeslot .timeslot-people {
+  height: auto !important;
+}
+
+.booked-appt-list .timeslot button.button {
+  background-color: #c59d5f !important;
+  border: 1px solid #c59d5f !important;
+  color: #ffffff !important;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.booked-appt-list .timeslot button.button .timeslot-mobile-title,
+.booked-appt-list .timeslot button.button .spots-available {
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  letter-spacing: normal !important;
+  line-height: 1.75em !important;
+  text-transform: none !important;
+}
+
+.booked-appt-list .timeslot button.button .button-timeslot {
+  color: #ffffff !important;
+  color: #000000;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.25em !important;
+  line-height: 1.33em !important;
+  text-transform: uppercase !important;
+}
+
+.booked-appt-list .timeslot button.button .button-timeslot a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.booked-appt-list .timeslot button.button .button-timeslot a:hover {
+  color: #c59d5f;
+}
+
+.booked-appt-list .timeslot button.button .button-text {
+  font-size: 12px !important;
+  line-height: 38px !important;
+}
+
+.booked-appt-list .timeslot button.button:hover {
+  background-color: #000000 !important;
+  border: 1px solid #000000 !important;
+}
+
+.booked-appt-list .timeslot button.button:focus {
+  outline: none;
+}
+
+body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button.button:hover {
+  background-color: #000000 !important;
+  border: 1px solid #000000 !important;
+}
+
+.booked-appt-list p {
+  color: #000000 !important;
+  padding: 22px 27px;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  letter-spacing: normal !important;
+  line-height: 1.75em !important;
+  text-transform: none !important;
+}
+
+.mkdf-booked-light .booked-appt-list {
+  background-color: #ffffff !important;
+}
+
+.mkdf-booked-light .booked-appt-list h2 {
+  color: #000000 !important;
+}
+
+.mkdf-booked-light .booked-appt-list .booked-list-view-nav .booked-list-view-date-prev,
+.mkdf-booked-light .booked-appt-list .booked-list-view-nav .booked-list-view-date-next,
+.mkdf-booked-light .booked-appt-list .booked-list-view-nav .booked-datepicker-wrap,
+.mkdf-booked-light .booked-appt-list .booked-list-view-nav .booked-datepicker-wrap a {
+  color: #000000;
+}
+
+.mkdf-booked-light .booked-appt-list .booked-list-view-nav .booked-list-view-date-prev:hover,
+.mkdf-booked-light .booked-appt-list .booked-list-view-nav .booked-list-view-date-next:hover,
+.mkdf-booked-light .booked-appt-list .booked-list-view-nav .booked-datepicker-wrap:hover,
+.mkdf-booked-light .booked-appt-list .booked-list-view-nav .booked-datepicker-wrap a:hover {
+  color: #dddddd;
+}
+
+.mkdf-booked-light .booked-appt-list .booked_list_date_picker_trigger.booked-dp-active {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.mkdf-booked-light .booked-appt-list .timeslot .timeslot-title {
+  color: #000000 !important;
+}
+
+.mkdf-booked-light .booked-appt-list .timeslot .timeslot-range {
+  color: #000000;
+}
+
+.mkdf-booked-light .booked-appt-list .timeslot .booked-icon {
+  color: #000000 !important;
+}
+
+.mkdf-booked-light .booked-appt-list .timeslot .spots-available {
+  color: #808080 !important;
+}
+
+.mkdf-booked-light .booked-appt-list .timeslot button.button {
+  background-color: #000000 !important;
+  border: 1px solid #000000 !important;
+  color: #ffffff !important;
+}
+
+.mkdf-booked-light .booked-appt-list .timeslot button.button .timeslot-mobile-title,
+.mkdf-booked-light .booked-appt-list .timeslot button.button .spots-available {
+  color: #ffffff !important;
+}
+
+.mkdf-booked-light .booked-appt-list .timeslot button.button .button-timeslot {
+  color: #ffffff !important;
+}
+
+.mkdf-booked-light .booked-appt-list .timeslot button.button:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.mkdf-booked-light .booked-appt-list .timeslot button.button:hover .timeslot-mobile-title,
+.mkdf-booked-light .booked-appt-list .timeslot button.button:hover .spots-available,
+.mkdf-booked-light .booked-appt-list .timeslot button.button:hover .button-timeslot {
+  color: #000000 !important;
+}
+
+body .mkdf-booked-light table.booked-calendar .booked-appt-list .timeslot .timeslot-people button.button:hover {
+  background-color: #ffffff !important;
+  border: 1px solid #000000 !important;
+}
+
+.mkdf-booked-light .booked-appt-list p {
+  color: #000000 !important;
+}
+
+.mkdf-booked-dark .booked-appt-list {
+  background-color: #000000 !important;
+}
+
+.mkdf-booked-dark .booked-appt-list h2 {
+  color: #ffffff !important;
+}
+
+.mkdf-booked-dark .booked-appt-list .booked-list-view-nav .booked-list-view-date-prev,
+.mkdf-booked-dark .booked-appt-list .booked-list-view-nav .booked-list-view-date-next,
+.mkdf-booked-dark .booked-appt-list .booked-list-view-nav .booked-datepicker-wrap,
+.mkdf-booked-dark .booked-appt-list .booked-list-view-nav .booked-datepicker-wrap a {
+  color: #ffffff;
+}
+
+.mkdf-booked-dark .booked-appt-list .booked-list-view-nav .booked-list-view-date-prev:hover,
+.mkdf-booked-dark .booked-appt-list .booked-list-view-nav .booked-list-view-date-next:hover,
+.mkdf-booked-dark .booked-appt-list .booked-list-view-nav .booked-datepicker-wrap:hover,
+.mkdf-booked-dark .booked-appt-list .booked-list-view-nav .booked-datepicker-wrap a:hover {
+  color: #dddddd;
+}
+
+.mkdf-booked-dark .booked-appt-list .booked_list_date_picker_trigger.booked-dp-active {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.mkdf-booked-dark .booked-appt-list .timeslot .timeslot-title {
+  color: #ffffff !important;
+}
+
+.mkdf-booked-dark .booked-appt-list .timeslot .timeslot-range {
+  color: #ffffff;
+}
+
+.mkdf-booked-dark .booked-appt-list .timeslot .booked-icon {
+  color: #ffffff !important;
+}
+
+.mkdf-booked-dark .booked-appt-list .timeslot .spots-available {
+  color: #ffffff !important;
+}
+
+.mkdf-booked-dark .booked-appt-list .timeslot button.button {
+  background-color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  color: #000000 !important;
+}
+
+.mkdf-booked-dark .booked-appt-list .timeslot button.button .timeslot-mobile-title,
+.mkdf-booked-dark .booked-appt-list .timeslot button.button .spots-available {
+  color: #000000 !important;
+}
+
+.mkdf-booked-dark .booked-appt-list .timeslot button.button .button-timeslot {
+  color: #000000 !important;
+}
+
+.mkdf-booked-dark .booked-appt-list .timeslot button.button:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.mkdf-booked-dark .booked-appt-list .timeslot button.button:hover .timeslot-mobile-title,
+.mkdf-booked-dark .booked-appt-list .timeslot button.button:hover .spots-available,
+.mkdf-booked-dark .booked-appt-list .timeslot button.button:hover .button-timeslot {
+  color: #ffffff !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar .booked-appt-list .timeslot .timeslot-people button.button:hover {
+  background-color: #000000 !important;
+  border: 1px solid #ffffff !important;
+}
+
+.mkdf-booked-dark .booked-appt-list p {
+  color: #ffffff !important;
+}
+
+body table.booked-calendar {
+  background-color: #c59d5f;
+  border: 1px solid #c59d5f !important;
+}
+
+body table.booked-calendar thead th {
+  border: none !important;
+}
+
+body table.booked-calendar th,
+body table.booked-calendar thead th,
+body table.booked-calendar thead tr {
+  background-color: #c59d5f !important;
+}
+
+body table.booked-calendar th .page-right,
+body table.booked-calendar th .page-left,
+body table.booked-calendar thead th .page-right,
+body table.booked-calendar thead th .page-left,
+body table.booked-calendar thead tr .page-right,
+body table.booked-calendar thead tr .page-left {
+  color: #000000 !important;
+}
+
+body table.booked-calendar thead {
+  background-color: #c59d5f !important;
+}
+
+body table.booked-calendar thead th {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  letter-spacing: normal !important;
+  line-height: 1.75em !important;
+  text-transform: none !important;
+}
+
+body table.booked-calendar .calendarSavingState {
+  color: #000000;
+}
+
+body table.booked-calendar .monthName {
+  color: #000000;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.25em !important;
+  line-height: 1.33em !important;
+  text-transform: uppercase !important;
+  color: #000000 !important;
+}
+
+body table.booked-calendar .monthName a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+body table.booked-calendar .monthName a:hover {
+  color: #c59d5f;
+}
+
+body table.booked-calendar .monthName .backToMonth {
+  display: none;
+}
+
+body .large table.booked-calendar .monthName {
+  color: #000000;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.025em !important;
+  line-height: 1.5em !important;
+  text-transform: uppercase !important;
+}
+
+body .large table.booked-calendar .monthName a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+body .large table.booked-calendar .monthName a:hover {
+  color: #c59d5f;
+}
+
+body table.booked-calendar .page-left,
+body table.booked-calendar .page-right {
+  margin-top: -1rem !important;
+}
+
+body table.booked-calendar tr {
+  border: none;
+  background: #ffffff;
+}
+
+body table.booked-calendar tbody {
+  background: #ffffff;
+}
+
+body table.booked-calendar tr.entryBlock {
+  background-color: transparent;
+}
+
+body table.booked-calendar tr.entryBlock td {
+  padding: 0 !important;
+}
+
+body table.booked-calendar tr.entryBlock td h2 {
+  margin: 0 !important;
+}
+
+body table.booked-calendar tr.days {
+  background: transparent !important;
+  text-transform: none;
+}
+
+body table.booked-calendar tr.days th {
+  background: transparent !important;
+  border: none !important;
+  color: #000000 !important;
+}
+
+body table.booked-calendar td {
+  background: #ffffff;
+  border: none !important;
+  color: #000000;
+  font-size: 1rem;
+}
+
+body table.booked-calendar td .date {
+  background: transparent !important;
+}
+
+body table.booked-calendar td .date .number {
+  border-radius: 0;
+}
+
+body table.booked-calendar td.active {
+  background-color: transparent !important;
+}
+
+body table.booked-calendar td.active .date {
+  background-color: #f7f8f9 !important;
+}
+
+body table.booked-calendar td.active .date .number {
+  background-color: #f7f8f9 !important;
+  color: #000000 !important;
+  -webkit-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+body table.booked-calendar td.next-month .date,
+body table.booked-calendar td.prev-month .date {
+  background: transparent;
+}
+
+body table.booked-calendar td.next-month .date span,
+body table.booked-calendar td.prev-month .date span {
+  color: #000000;
+}
+
+body table.booked-calendar td.today .date span {
+  background: #c59d5f !important;
+  border: none !important;
+  color: #000000 !important;
+}
+
+body table.booked-calendar td.today:hover .date span {
+  background: #c59d5f !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+
+body table.booked-calendar td.prev-date .date,
+body table.booked-calendar td.prev-date .date span,
+body table.booked-calendar td.prev-date:hover .date,
+body table.booked-calendar td.prev-date:hover .date span {
+  background: transparent !important;
+  color: #dddddd !important;
+}
+
+body table.booked-calendar td:hover .date span {
+  background-color: #c59d5f;
+}
+
+body .mkdf-booked-light table.booked-calendar {
+  background-color: #ffffff;
+  border: 1px solid #ffffff !important;
+}
+
+body .mkdf-booked-light table.booked-calendar th,
+body .mkdf-booked-light table.booked-calendar thead th,
+body .mkdf-booked-light table.booked-calendar thead tr {
+  background-color: #ffffff !important;
+}
+
+body .mkdf-booked-light table.booked-calendar th .page-right,
+body .mkdf-booked-light table.booked-calendar th .page-left,
+body .mkdf-booked-light table.booked-calendar thead th .page-right,
+body .mkdf-booked-light table.booked-calendar thead th .page-left,
+body .mkdf-booked-light table.booked-calendar thead tr .page-right,
+body .mkdf-booked-light table.booked-calendar thead tr .page-left {
+  color: #000000 !important;
+}
+
+body .mkdf-booked-light table.booked-calendar .calendarSavingState {
+  color: #000000;
+}
+
+body .mkdf-booked-light table.booked-calendar .monthName {
+  color: #000000 !important;
+}
+
+body .mkdf-booked-light table.booked-calendar tr,
+body .mkdf-booked-light table.booked-calendar tbody {
+  background: #000000;
+}
+
+body .mkdf-booked-light table.booked-calendar thead tr.days {
+  background: #000000 !important;
+}
+
+body .mkdf-booked-light table.booked-calendar thead tr.days th {
+  background: #000000 !important;
+  color: #808080 !important;
+}
+
+body .mkdf-booked-light table.booked-calendar td {
+  background: #000000;
+  color: #ffffff;
+}
+
+body .mkdf-booked-light table.booked-calendar td.active .date {
+  background-color: #ffffff !important;
+}
+
+body .mkdf-booked-light table.booked-calendar td.active .date .number {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+body .mkdf-booked-light table.booked-calendar td.next-month .date span,
+body .mkdf-booked-light table.booked-calendar td.prev-month .date span {
+  color: #ffffff;
+}
+
+body .mkdf-booked-light table.booked-calendar td.today .date span {
+  background: #808080 !important;
+  color: #000000 !important;
+}
+
+body .mkdf-booked-light table.booked-calendar td.today:hover .date span {
+  background: #808080 !important;
+  color: #ffffff !important;
+}
+
+body .mkdf-booked-light table.booked-calendar td.prev-date .date,
+body .mkdf-booked-light table.booked-calendar td.prev-date .date span,
+body .mkdf-booked-light table.booked-calendar td.prev-date:hover .date,
+body .mkdf-booked-light table.booked-calendar td.prev-date:hover .date span {
+  background: transparent !important;
+  color: #808080 !important;
+}
+
+body .mkdf-booked-light table.booked-calendar td:hover .date span {
+  background-color: #808080;
+  color: #ffffff;
+}
+
+body .mkdf-booked-dark table.booked-calendar {
+  background-color: #000000;
+  border: 1px solid #000000 !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar th,
+body .mkdf-booked-dark table.booked-calendar thead th,
+body .mkdf-booked-dark table.booked-calendar thead tr {
+  background-color: #000000 !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar th .page-right,
+body .mkdf-booked-dark table.booked-calendar th .page-left,
+body .mkdf-booked-dark table.booked-calendar thead th .page-right,
+body .mkdf-booked-dark table.booked-calendar thead th .page-left,
+body .mkdf-booked-dark table.booked-calendar thead tr .page-right,
+body .mkdf-booked-dark table.booked-calendar thead tr .page-left {
+  color: #ffffff !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar .calendarSavingState {
+  color: #ffffff;
+}
+
+body .mkdf-booked-dark table.booked-calendar .monthName {
+  color: #ffffff !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar tr,
+body .mkdf-booked-dark table.booked-calendar tbody {
+  background: #ffffff;
+}
+
+body .mkdf-booked-dark table.booked-calendar thead tr.days {
+  background: #ffffff !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar thead tr.days th {
+  background: #ffffff !important;
+  color: #808080 !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar td {
+  background: #ffffff;
+  color: #000000;
+}
+
+body .mkdf-booked-dark table.booked-calendar td.active .date {
+  background-color: #000000 !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar td.active .date .number {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar td.next-month .date span,
+body .mkdf-booked-dark table.booked-calendar td.prev-month .date span {
+  color: #000000;
+}
+
+body .mkdf-booked-dark table.booked-calendar td.today .date span {
+  background: #808080 !important;
+  color: #dddddd !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar td.today:hover .date span {
+  background: #808080 !important;
+  color: #ffffff !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar td.prev-date .date,
+body .mkdf-booked-dark table.booked-calendar td.prev-date .date span,
+body .mkdf-booked-dark table.booked-calendar td.prev-date:hover .date,
+body .mkdf-booked-dark table.booked-calendar td.prev-date:hover .date span {
+  background: transparent !important;
+  color: #dddddd !important;
+}
+
+body .mkdf-booked-dark table.booked-calendar td:hover .date span {
+  background-color: #808080;
+  color: #ffffff;
+}
+
+#ui-datepicker-div.booked_custom_date_picker {
+  border: 3px solid #c59d5f;
+  border-radius: 0;
+  -webkit-box-shadow: 4px 8px 50px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 8px 50px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+}
+
+#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header {
+  background-color: #c59d5f !important;
+  padding: 5px 25px;
+}
+
+#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-prev,
+#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-next {
+  top: 8px;
+}
+
+#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-prev:before,
+#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-next:before {
+  color: #000000 !important;
+  font-family: 'BookedIcons' !important;
+  font-size: 12px !important;
+}
+
+#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-title {
+  color: #000000;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.25em !important;
+  line-height: 1.33em !important;
+  text-transform: uppercase !important;
+}
+
+#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-title a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-title a:hover {
+  color: #c59d5f;
+}
+
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar {
+  border-collapse: initial;
+}
+
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead {
+  background-color: #c59d5f !important;
+}
+
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead th {
+  background: transparent !important;
+  color: #000000;
+}
+
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a {
+  border-radius: 0;
+  color: #000000 !important;
+}
+
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a:hover {
+  background-color: #dddddd;
+}
+
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active, #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active:hover {
+  background-color: #c59d5f !important;
+  color: #ffffff !important;
+}
+
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-unselectable span {
+  color: #dddddd;
+}
+
+body .booked-modal .bm-window {
+  background-color: #ffffff;
+  border-radius: 0;
+  border-top: 6px solid #c59d5f;
+  -webkit-box-shadow: 4px 8px 50px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 8px 50px 0px rgba(0, 0, 0, 0.15);
+  padding: 70px 45px 30px 45px;
+}
+
+body .booked-modal .bm-window p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 1.75em;
+  text-transform: none;
+}
+
+body .booked-modal .bm-window .booked-title-bar {
+  background: transparent !important;
+  border-radius: 0;
+  color: #000000 !important;
+  margin: 0;
+  padding: 25px 45px 10px 45px !important;
+  color: #000000;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.025em !important;
+  line-height: 1.5em !important;
+  text-transform: uppercase !important;
+}
+
+body .booked-modal .bm-window .booked-title-bar a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+body .booked-modal .bm-window .booked-title-bar a:hover {
+  color: #c59d5f;
+}
+
+body .booked-modal .bm-window .booked-title-bar * {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+body .booked-modal .bm-window .booked-title-bar i.fa {
+  color: #c59d5f;
+}
+
+body .booked-modal .bm-window a:not(.close) {
+  color: #c59d5f;
+}
+
+body .booked-modal .bm-window a:not(.close):hover {
+  color: #000000;
+}
+
+body .booked-modal .bm-window .close {
+  background-color: #c59d5f;
+  color: #000000;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  right: 0;
+  text-align: center;
+  top: -30px;
+  width: 30px;
+  -webkit-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+body .booked-modal .bm-window .close:hover {
+  color: #ffffff;
+}
+
+body .booked-modal .bm-window .close i {
+  font-family: 'FontAwesome';
+  font-size: 14px;
+  top: -3px;
+  position: relative;
+}
+
+body .booked-modal .bm-window .close i:before {
+  content: "\f00d";
+}
+
+body .booked-modal .bm-window .booked-scrollable {
+  background-color: transparent;
+  padding: 10px 0 34px 0;
+}
+
+body .booked-modal .bm-window .booked-form .booked-appointments {
+  background-color: transparent;
+  border: 1px solid #afaaa9;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 20px;
+}
+
+body .booked-modal .bm-window .booked-form .appointment-title {
+  color: #c59d5f !important;
+  color: #000000;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.25em !important;
+  line-height: 1.33em !important;
+  text-transform: uppercase !important;
+}
+
+body .booked-modal .bm-window .booked-form .appointment-title a {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+body .booked-modal .bm-window .booked-form .appointment-title a:hover {
+  color: #c59d5f;
+}
+
+body .booked-modal .bm-window .button {
+  cursor: pointer;
+  float: left;
+  font-family: inherit;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  outline: none;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  font-size: 12px;
+  padding: 14px 55px;
+}
+
+body .booked-modal .bm-window .button:last-child {
+  margin-top: 10px;
+}
+
+@media (max-width: 420px) {
+  body .booked-modal .bm-window .button {
+    letter-spacing: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+body .booked-modal .bm-window input[type=submit].button-primary {
+  color: #fff !important;
+  background-color: #000000 !important;
+  border: 1px solid transparent !important;
+}
+
+body .booked-modal .bm-window input[type=submit].button-primary:hover {
+  color: #fff !important;
+  background-color: #c59d5f !important;
+}
+
+body .booked-modal .bm-window button.cancel {
+  clear: both;
+  color: #000000 !important;
+  background-color: transparent !important;
+  border: 1px solid #000000 !important;
+}
+
+body .booked-modal .bm-window button.cancel:hover {
+  color: #fff !important;
+  background-color: #c59d5f !important;
+  border-color: #c59d5f !important;
+}
+
+/* ==========================================================================
+   Booked Slider shortcode style - begin
+   ========================================================================== */
+.mkdf-booked-slider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-booked-slider.mkdf-left-position .mkdf-bs-calendar-content {
+  left: 0;
+  z-index: 2;
+}
+
+.mkdf-booked-slider.mkdf-center-position .mkdf-bs-calendar-content {
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.mkdf-booked-slider.mkdf-right-position .mkdf-bs-calendar-content {
+  right: 0;
+  z-index: 2;
+}
+
+.mkdf-booked-slider.mkdf-bs-calendar-is-middle .mkdf-bs-calendar-content {
+  top: 50% !important;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.mkdf-booked-slider .mkdf-bs-rev-holder {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-booked-slider .mkdf-bs-calendar-holder {
+  z-index: 10;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.mkdf-booked-slider .mkdf-bs-calendar-holder .mkdf-grid {
+  position: relative;
+  height: 100%;
+}
+
+.mkdf-booked-slider .mkdf-bs-calendar-content {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+/* ==========================================================================
+   Booked Slider shortcode style - end
+   ========================================================================== */
+.mkdf-wh-holder {
+  position: relative;
+}
+
+.mkdf-wh-holder .mkdf-wh-items {
+  margin: 0;
+}
+
+.mkdf-wh-holder .mkdf-wh-item {
+  border-bottom: 1px solid #afaaa9;
+  list-style-type: none;
+  margin-bottom: 16px;
+  padding-bottom: 17px;
+  position: relative;
+}
+
+.mkdf-wh-holder .mkdf-wh-item:last-child {
+  border: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.mkdf-wh-holder .mkdf-wh-day {
+  display: table-cell;
+  margin: 0;
+  vertical-align: bottom;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.mkdf-wh-holder .mkdf-wh-hours {
+  color: #c59d5f;
+  display: table-cell;
+  margin: 0;
+  text-align: right;
+  vertical-align: bottom;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.mkdf-wh-holder.mkdf-wh-light .mkdf-wh-item {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.mkdf-wh-holder.mkdf-wh-light .mkdf-wh-day {
+  color: #ffffff;
+}
+
+.mkdf-wh-holder.mkdf-wh-light .mkdf-wh-hours {
+  color: #ffffff;
+}
+
+.mkdf-wh-holder.mkdf-wh-dark .mkdf-wh-item {
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+.mkdf-wh-holder.mkdf-wh-dark .mkdf-wh-day {
+  color: #000000;
+}
+
+.mkdf-wh-holder.mkdf-wh-dark .mkdf-wh-hours {
+  color: #000000;
+}
+
+/* ==========================================================================
+   Widget styles
+   ========================================================================== */
+.widget .mkdf-wh-holder .mkdf-wh-item {
+  border: 0;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.widget .mkdf-wh-holder .mkdf-wh-day,
+.widget .mkdf-wh-holder .mkdf-wh-hours {
+  color: inherit;
+  line-height: inherit;
+}
+
+/* ==========================================================================
+   Booked Modules styles
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/curly-business/assets/css/business.css.map */

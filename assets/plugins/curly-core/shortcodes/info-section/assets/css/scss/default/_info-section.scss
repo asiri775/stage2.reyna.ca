@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Info Section shortcode styles - begin
+   ========================================================================== */
+
+.mkdf-info-section {
+    position: relative;
+    text-align: center;
+
+    .mkdf-is-background-text {
+        color: $first-main-color;
+        font-size: 226px;
+        line-height: 1em;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        opacity:0;
+        white-space: nowrap;
+        z-index: 0;
+        @include mkdfTransition(opacity .3s ease-out .2s);
+
+        &.mkdf-background-text-appeared {
+            opacity:.2;
+        }
+    }
+
+    .mkdf-is-inner {
+        margin: 0 auto;
+        position: relative;
+        width: 66%;
+        z-index: 1;
+    }
+
+    .mkdf-is-subtitle {
+        margin-bottom: 13px;
+    }
+
+    .mkdf-is-title {
+        margin-bottom: 28px;
+    }
+
+    .mkdf-is-text {
+        margin: 0 0 47px 0;
+    }
+
+    .mkdf-is-button {
+
+    }
+
+    &.mkdf-left {
+        text-align: left;
+
+        .mkdf-is-background-text {
+            left: 0;
+        }
+    }
+
+    &.mkdf-center {
+        text-align: center;
+
+        .mkdf-is-background-text {
+            left: 50%;
+
+            @include mkdfTransform(translateX(-50%));
+        }
+    }
+
+    &.mkdf-right {
+        text-align: right;
+
+        .mkdf-is-background-text {
+            right: 0;
+        }
+    }
+
+    &.mkdf-light {
+        .mkdf-is-subtitle,
+        .mkdf-is-title,
+        .mkdf-is-text {
+            color: #ffffff;
+        }
+
+        .mkdf-btn.mkdf-btn-outline:hover {
+            color:#000 !important;
+            background-color:#fff !important;
+            border-color: #fff !important;
+
+            > span {
+                color:#000 !important;
+            }
+        }
+    }
+
+    &.mkdf-dark {
+        .mkdf-is-subtitle,
+        .mkdf-is-title,
+        .mkdf-is-text {
+            color: $default-text-color;
+        }
+    }
+}
+
+/* ==========================================================================
+   Info Section shortcode styles - end
+   ========================================================================== */
+
+

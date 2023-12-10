@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Custom Post Types responsive styles
+   ========================================================================== */
+/* ==========================================================================
+# Business Menu List responsive style - begin
+========================================================================== */
+@media only screen and (max-width: 680px) {
+  .mkdf-bsl-holder .mkdf-bsl-item-line {
+    display: none;
+  }
+  .mkdf-bsl-holder .mkdf-bsl-item-price-holder {
+    text-align: right;
+  }
+  .mkdf-bsl-holder .mkdf-bsl-item-label-holder {
+    float: none;
+    text-align: left;
+    width: 80%;
+    top: 10px;
+  }
+  .mkdf-bsl-holder .mkdf-bsl-item-title-holder {
+    width: 80%;
+    white-space: normal;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-bsl-holder.mkdf-bsl-with-image .mkdf-bsl-item-image {
+    display: none;
+  }
+  .mkdf-bsl-holder.mkdf-bsl-with-image .mkdf-bsl-item-content {
+    padding-left: 0px;
+  }
+}
+
+/* ==========================================================================
+# Business Menu List responsive style - end
+========================================================================== */
+/* ==========================================================================
+   Shortcodes responsive styles
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/curly-business/assets/css/business-responsive.css.map */

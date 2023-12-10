@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-list-holder {
+    &.mkdf-pl-gallery-overlay {
+        &.mkdf-pl-has-shadow {
+            .mkdf-pl-item-inner {
+                box-shadow: $default-box-shadow;
+            }
+        }
+
+        article {
+            &:hover {
+                .mkdf-pli-text-holder {
+                    opacity: 1;
+                    @include mkdfTransform(scale(1.001));
+                }
+            }
+
+            .mkdf-pl-item-inner {
+                overflow: hidden;
+            }
+
+            .mkdf-pli-text {
+                .mkdf-pli-title,
+                .mkdf-pli-excerpt {
+                    color: #fff;
+                }
+
+                .mkdf-pli-category-holder {
+                    a {
+                        color: #fff;
+
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mkdf-pli-text-holder {
+            $offset: 20px;
+
+            background-color: rgba($default-text-color, 0.4);
+            border: 2px solid $first-main-color;
+            box-sizing: border-box;
+            display: block;
+            height: calc(100% - #{$offset * 2});
+            left: $offset;
+            opacity: 0;
+            padding: $offset;
+            position: absolute;
+            text-align: center;
+            top: $offset;
+            width: calc(100% - #{$offset * 2});
+
+            @include mkdfTransition(all .2s ease-in-out);
+            @include mkdfTransform(scale(.95));
+        }
+    }
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - end
+   ========================================================================== */

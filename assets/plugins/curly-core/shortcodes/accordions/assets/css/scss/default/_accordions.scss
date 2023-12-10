@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Accordions shortcode style - begin
+   ========================================================================== */
+
+.mkdf-accordion-holder {
+    @include mkdfRelativeHolderLayout();
+
+    .mkdf-accordion-title {
+        position: relative;
+        cursor: pointer;
+        margin: 0;
+        box-sizing: border-box;
+        @include mkdfTransform(translateZ(0px));
+        @include mkdfTransition(color .2s ease-out, background-color .2s ease-out);
+
+        .mkdf-tab-title {
+            display: block;
+            line-height: inherit;
+        }
+
+        .mkdf-accordion-mark {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 20px;
+            height: 18px;
+            margin: -1px 0 0;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: center;
+            @include mkdfTransform(translateY(-50%));
+
+            span {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                font-size: inherit;
+                line-height: inherit;
+                @include mkdfTransition(opacity .2s ease-out);
+
+                &:before {
+                    display: block;
+                    line-height: inherit;
+                }
+
+                &.mkdf_icon_minus {
+                    opacity: 0;
+                }
+
+                &.mkdf_icon_plus {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &.ui-state-active,
+        &.ui-state-hover {
+
+            .mkdf-accordion-mark {
+
+                span {
+
+                    &.mkdf_icon_minus {
+                        opacity: 1;
+                    }
+
+                    &.mkdf_icon_plus {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .mkdf-accordion-content {
+        margin: 0;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &.mkdf-ac-boxed {
+
+        &.mkdf-white-skin {
+
+            .mkdf-accordion-title {
+                background-color: #fff;
+            }
+        }
+
+        .mkdf-accordion-title {
+            margin: 15px 0 0;
+            padding: 13px 20px 13px 40px;
+            background-color: #f7f7f9;
+
+            &:first-child {
+                margin: 0;
+            }
+
+            .mkdf-accordion-mark {
+                left: 10px;
+            }
+
+            &.ui-state-active,
+            &.ui-state-hover {
+                color: #fff;
+                background-color: $first-main-color;
+            }
+        }
+
+        .mkdf-accordion-content {
+            padding: 21px 0 6px;
+        }
+    }
+
+    &.mkdf-ac-simple {
+        border-bottom: 1px solid $default-border-color;
+
+        .mkdf-accordion-title {
+            padding: 17px 0 17px 30px;
+            border-top: 1px solid $default-border-color;
+        }
+
+        .mkdf-accordion-content {
+            border-top: 1px solid transparent;
+
+            &.ui-accordion-content-active {
+                border-color: $default-border-color;
+            }
+        }
+
+        .mkdf-accordion-content {
+            padding: 21px 0 16px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Accordions shortcode style - end
+   ========================================================================== */

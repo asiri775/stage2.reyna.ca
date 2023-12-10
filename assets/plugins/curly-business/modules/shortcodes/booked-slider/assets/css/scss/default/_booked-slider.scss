@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Booked Slider shortcode style - begin
+   ========================================================================== */
+
+.mkdf-booked-slider {
+    @include mkdfRelativeHolderLayout();
+
+    // horizontal alignment
+    &.mkdf-left-position {
+        .mkdf-bs-calendar-content {
+            left: 0;
+            z-index: 2;
+        }
+    }
+
+    &.mkdf-center-position {
+        .mkdf-bs-calendar-content {
+            left: 50%;
+            z-index: 2;
+            @include mkdfTransform(translateX(-50%));
+        }
+    }
+
+    &.mkdf-right-position {
+        .mkdf-bs-calendar-content {
+            right: 0;
+            z-index: 2;
+        }
+    }
+
+    // vertical alignment
+    &.mkdf-bs-calendar-is-middle {
+        .mkdf-bs-calendar-content {
+            top: 50% !important;
+            @include mkdfTransform(translateY(-50%));
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //.mkdf-bs-calendar-title {
+    //    @include mkdfRelativeHolderLayout();
+    //    background-color: #fff;
+    //    padding: 7% 9%;
+    //    margin: 0;
+    //    box-sizing: border-box;
+    //
+    //    @include laptop-landscape-medium {
+    //        padding: 6% 7%;
+    //    }
+    //
+    //    @include phone-landscape {
+    //        display: none;
+    //    }
+    //}
+    //
+    //h3.mkdf-bs-calendar-title {
+    //    font-size: 30px;
+    //    line-height: 44px;
+    //
+    //    @include laptop-landscape-medium {
+    //        font-size: 25px;
+    //        line-height: 38px;
+    //    }
+    //}
+
+    // rev holder
+    .mkdf-bs-rev-holder {
+        z-index: 1;
+
+        @include mkdfRelativeHolderLayout();
+    }
+
+    // calendar holder
+    .mkdf-bs-calendar-holder {
+        z-index: 10;
+
+        @include mkdfAbsoluteHolderLayout();
+
+        .mkdf-grid {
+            position: relative;
+            height: 100%;
+        }
+    }
+
+    .mkdf-bs-calendar-content {
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+    }
+}
+
+/* ==========================================================================
+   Booked Slider shortcode style - end
+   ========================================================================== */

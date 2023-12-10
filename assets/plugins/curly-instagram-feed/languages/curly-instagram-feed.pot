@@ -1,0 +1,115 @@
+# Copyright (C) 2021 Mikado Themes
+# This file is distributed under the same license as the Curly Instagram Feed plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Curly Instagram Feed 2.1.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/curly-instagram-feed\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-09-03T16:48:37+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: curly-instagram-feed\n"
+
+#. Plugin Name of the plugin
+msgid "Curly Instagram Feed"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that adds Instagram feed functionality to our theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mikado Themes"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:14
+msgid "Curly Instagram Widget"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:16
+msgid "Display your Instagram feed"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:28
+msgid "Title"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:33
+msgid "Type"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:35
+msgid "Gallery"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:36
+msgid "Carousel"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:42
+msgid "Number of Columns"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:44
+msgid "Two"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:45
+msgid "Three"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:46
+msgid "Four"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:47
+msgid "Six"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:48
+msgid "Nine"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:54
+msgid "Number of Photos"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:59
+msgid "Space Between Items"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:61
+msgid "Normal"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:62
+msgid "Small"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:63
+msgid "Tiny"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:64
+msgid "No Space"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:70
+msgid "Show Instagram Icon"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:72
+msgid "Yes"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:73
+msgid "No"
+msgstr ""
+
+#: widgets/curly-instagram-widget.php:79
+msgid "Images Cache Time"
+msgstr ""

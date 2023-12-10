@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+
+.mkdf-pricing-tables {
+    @include mkdfRelativeHolderLayout();
+
+    clear: both;
+
+    .mkdf-pt-wrapper {
+        position: relative;
+    }
+
+    $pricing_table_columns: ('mkdf-two-columns', 'mkdf-three-columns', 'mkdf-four-columns', 'mkdf-five-columns');
+    @for $i from 0 to length($pricing_table_columns) {
+        &.#{nth($pricing_table_columns, $i+1)} {
+            $column_width: 100%/($i+2);
+
+            .mkdf-price-table {
+                width: $column_width;
+            }
+        }
+    }
+}
+
+.mkdf-price-table {
+    $pricing-gap: 30px;
+
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    .mkdf-pt-inner {
+        @include mkdfRelativeHolderLayout();
+
+        ul {
+            list-style: none;
+            margin: 0 0 73px;
+            padding: 0;
+
+            li {
+                margin: 0;
+                text-align: center;
+
+                &.mkdf-pt-title-holder {
+                    padding: 84px $pricing-gap 0;
+                }
+
+                &.mkdf-pt-prices {
+                    padding: 5px $pricing-gap 0;
+
+                    .mkdf-pt-price {
+                        span {
+                            font-size: 20px;
+                            font-weight: 300;
+                        }
+                    }
+
+                    .mkdf-pt-period {
+                        padding-top: 16px;
+                    }
+                }
+
+                &.mkdf-pt-content {
+                    line-height: 2.5em;
+                    padding: 49px $pricing-gap 0;
+                }
+
+                &.mkdf-pt-button {
+                    padding: 54px $pricing-gap 0;
+                }
+            }
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // skins
+
+    &.mkdf-light {
+        .mkdf-pt-inner {
+            background-color: $elements-color-four;
+            border: 1px solid #ffffff;
+        }
+
+        .mkdf-pt-price,
+        .mkdf-pt-period,
+        .mkdf-pt-content {
+            color: #ffffff;
+        }
+
+        .mkdf-btn.mkdf-btn-outline:hover {
+            color:#000 !important;
+            background-color:#fff !important;
+            border-color: #fff !important;
+
+            > span {
+                color:#000 !important;
+            }
+        }
+    }
+
+    &.mkdf-dark {
+        .mkdf-pt-inner {
+            background-color: #ffffff;
+            border: 1px solid $elements-color-four;
+        }
+
+        .mkdf-pt-price,
+        .mkdf-pt-period,
+        .mkdf-pt-content {
+            color: $default-text-color;
+        }
+    }
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */

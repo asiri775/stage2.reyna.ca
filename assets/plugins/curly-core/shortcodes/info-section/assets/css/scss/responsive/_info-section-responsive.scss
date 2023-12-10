@@ -1,0 +1,36 @@
+@include ipad-landscape() {
+    .mkdf-info-section {
+        .mkdf-is-background-text {
+            font-size: 170px !important;
+            padding-top: 25px !important;
+        }
+
+        .mkdf-is-inner {
+            padding-top: 112.5px !important;
+        }
+    }
+}
+
+@include ipad-landscape() {
+
+    .mkdf-info-section .mkdf-is-background-text {
+        opacity: .2;
+    }
+}
+
+@include phone-landscape() {
+    .mkdf-info-section {
+        .mkdf-is-inner {
+            padding-top: 112.5px !important;
+            width: 100% !important;
+        }
+    }
+}
+
+@include phone-portrait() {
+    .mkdf-info-section {
+        .mkdf-is-background-text {
+            display: none;
+        }
+    }
+}

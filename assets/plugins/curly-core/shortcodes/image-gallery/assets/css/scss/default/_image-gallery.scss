@@ -1,0 +1,201 @@
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+
+.mkdf-image-gallery {
+    @include mkdfRelativeHolderLayout();
+
+    &.mkdf-has-shadow {
+
+        .mkdf-ig-image-inner {
+            box-shadow: $default-box-shadow;
+        }
+
+        &.mkdf-ig-slider-type,
+        &.mkdf-ig-carousel-type {
+
+            .owl-stage-outer {
+                padding: 0 0 20px;
+            }
+
+            .mkdf-ig-image {
+                box-shadow: $default-box-shadow;
+            }
+        }
+    }
+
+    .mkdf-ig-image {
+        @include mkdfRelativeHolderLayout();
+        box-sizing: border-box;
+
+        a, img {
+            position: relative;
+            display: block;
+        }
+    }
+
+    .mkdf-ig-image-inner {
+        @include mkdfRelativeHolderLayout();
+    }
+
+    .mkdf-ig-slider {
+        @include mkdfRelativeHolderLayout();
+    }
+
+    /***** Image Gallery Grid Style - begin *****/
+
+    .mkdf-ig-grid {
+
+        .mkdf-ig-image {
+            float: left;
+        }
+
+        $gallery_columns: ('two', 'three', 'four', 'five', 'six');
+        @for $i from 0 to length($gallery_columns) {
+            &.mkdf-ig-#{nth($gallery_columns, $i+1)}-columns {
+                $column_width: 100%/($i+2);
+
+                .mkdf-ig-image {
+                    width: $column_width;
+
+                    @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /***** Image Gallery Grid Style - end *****/
+
+    /***** Image Gallery Masonry Style - begin *****/
+
+    .mkdf-ig-masonry {
+        opacity: 0;
+        @include mkdfTransition(opacity .2s ease-out);
+
+        .mkdf-ig-grid-sizer {
+            width: 100%;
+        }
+
+        .mkdf-ig-grid-gutter {
+            width: 0;
+        }
+
+        $masonry_columns: ('two', 'three', 'four', 'five', 'six');
+
+        @for $i from 0 to length($masonry_columns) {
+            &.mkdf-ig-#{nth($masonry_columns,$i+1)}-columns {
+                $column_width: 100%/($i+2);
+
+                .mkdf-ig-image,
+                .mkdf-ig-grid-sizer {
+                    width: $column_width;
+                }
+
+                .mkdf-ig-image.mkdf-large-masonry-item {
+                    width: $column_width * 2;
+                }
+            }
+        }
+    }
+
+    /***** Image Gallery Masonry Style - end *****/
+
+    /***** Custom Link Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-custom-link {
+
+        .mkdf-ig-image {
+
+            a {
+                @include mkdfImageOverlayHoverStyle();
+            }
+        }
+    }
+
+    /***** Custom Link Behavior Style - end *****/
+
+    /***** Lightbox Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-lightbox {
+
+        .mkdf-ig-image {
+
+            a {
+                @include mkdfImageOverlayHoverStyle();
+            }
+        }
+    }
+
+    /***** Lightbox Behavior Style - end *****/
+
+    /***** Zoom Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-zoom {
+
+        .mkdf-ig-image {
+
+            .touchevents & {
+                cursor: pointer;
+            }
+
+            &:hover {
+
+                img {
+                    @include mkdfTransform(scale(1.04));
+                }
+            }
+
+            .mkdf-ig-image-inner {
+                overflow: hidden;
+            }
+
+            img {
+                @include mkdfTransform(scale(1));
+                @include mkdfTransitionTransform(.3s ease-in-out);
+            }
+        }
+    }
+
+    /***** Zoom Behavior Style - end *****/
+
+    /***** Grayscale Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-grayscale {
+
+        .mkdf-ig-image {
+            overflow: hidden;
+
+            .touchevents & {
+                cursor: pointer;
+            }
+
+            &:hover {
+
+                img {
+                    -webkit-filter: grayscale(0);
+                    filter: none;
+                }
+            }
+
+            img {
+                filter: url('img/desaturate.svg#grayscale');
+                -webkit-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+                filter: gray;
+                filter: grayscale(100%);
+                @include mkdfTransition(all .3s ease-in-out);
+            }
+        }
+    }
+
+    /***** Grayscale Behavior Style - end *****/
+}
+
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */

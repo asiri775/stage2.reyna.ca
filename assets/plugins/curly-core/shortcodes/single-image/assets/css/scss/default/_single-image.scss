@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Single Image shortcode style - begin
+   ========================================================================== */
+
+.mkdf-single-image-holder {
+    @include mkdfRelativeHolderLayout();
+
+    &.mkdf-has-shadow {
+
+        .mkdf-si-inner {
+            box-shadow: $default-box-shadow;
+        }
+    }
+
+    .mkdf-si-inner {
+        @include mkdfRelativeHolderLayout();
+
+        a, img {
+            position: relative;
+            display: block;
+        }
+    }
+
+    /***** Custom Link Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-custom-link {
+
+        .mkdf-si-inner {
+
+            a {
+                @include mkdfImageOverlayHoverStyle();
+            }
+        }
+    }
+
+    /***** Custom Link Behavior Style - end *****/
+
+    /***** Lightbox Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-lightbox {
+
+        .mkdf-si-inner {
+
+            a {
+                @include mkdfImageOverlayHoverStyle();
+            }
+        }
+    }
+
+    /***** Lightbox Behavior Style - end *****/
+
+    /***** Zoom Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-zoom {
+
+        .mkdf-si-inner {
+            overflow: hidden;
+
+            .touchevents & {
+                cursor: pointer;
+            }
+
+            &:hover {
+
+                img {
+                    @include mkdfTransform(scale(1.04));
+                }
+            }
+
+            img {
+                @include mkdfTransform(scale(1));
+                @include mkdfTransitionTransform(.3s ease-in-out);
+            }
+        }
+    }
+
+    /***** Zoom Behavior Style - end *****/
+
+    /***** Grayscale Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-grayscale {
+
+        .mkdf-si-inner {
+            overflow: hidden;
+
+            .touchevents & {
+                cursor: pointer;
+            }
+
+            &:hover {
+
+                img {
+                    -webkit-filter: grayscale(0);
+                    filter: none;
+                }
+            }
+
+            img {
+                filter: url('img/desaturate.svg#grayscale');
+                -webkit-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+                filter: gray;
+                filter: grayscale(100%);
+                @include mkdfTransition(all .3s ease-in-out);
+            }
+        }
+    }
+
+    /***** Grayscale Behavior Style - end *****/
+
+    /***** Moving Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-moving {
+
+        .mkdf-si-inner {
+            overflow: hidden;
+            padding: 10% 0;
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            background-size: 120%;
+            @include mkdfTransition(background .7s ease-out);
+
+            &:hover {
+                background-position: 90% center;
+            }
+
+            .touchevents & {
+                cursor: pointer;
+            }
+
+            img {
+                z-index: -1;
+                max-width: 80%;
+            }
+
+            @include ipad-landscape {
+                padding: 0;
+                background: none;
+
+                img {
+                    z-index: inherit;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    /***** Moving Behavior Style - end *****/
+}
+
+/* ==========================================================================
+   Single Image shortcode style - end
+   ========================================================================== */

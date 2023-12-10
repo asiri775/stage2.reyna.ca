@@ -1,0 +1,1046 @@
+# Copyright (C) 2021 Mikado Themes
+# This file is distributed under the same license as the Curly Business plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Curly Business 2.0.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/curly-business\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-09-03T16:48:34+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: curly-business\n"
+
+#. Plugin Name of the plugin
+msgid "Curly Business"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that adds features to our theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mikado Themes"
+msgstr ""
+
+#: admin/options/map.php:10
+msgid "Business"
+msgstr ""
+
+#: admin/options/map.php:19
+#: modules/shortcodes/working-hours/elementor-working-hours.php:9
+#: modules/shortcodes/working-hours/working-hours.php:22
+msgid "Working Hours"
+msgstr ""
+
+#: admin/options/map.php:25
+msgid "Working Hours Layout"
+msgstr ""
+
+#: admin/options/map.php:26
+msgid "Layout will be used in Working Hours shortcode"
+msgstr ""
+
+#: admin/options/map.php:28
+msgid "- Choose Working Hours Layout"
+msgstr ""
+
+#: admin/options/map.php:29
+#: admin/options/map.php:60
+msgid "All Days"
+msgstr ""
+
+#: admin/options/map.php:30
+msgid "Workdays + Weekend"
+msgstr ""
+
+#: admin/options/map.php:31
+msgid "Workdays + Sat + Sun"
+msgstr ""
+
+#: admin/options/map.php:32
+msgid "Same Throught the Week"
+msgstr ""
+
+#: admin/options/map.php:33
+msgid "Mon + Tue + Wed + Thu + Fri + Weekend"
+msgstr ""
+
+#: admin/options/map.php:62
+msgid "Same throught the week"
+msgstr ""
+
+#: admin/options/map.php:73
+#: admin/options/map.php:118
+#: admin/options/map.php:163
+#: admin/options/map.php:189
+#: admin/options/map.php:215
+#: admin/options/map.php:241
+#: admin/options/map.php:267
+#: admin/options/map.php:312
+#: admin/options/map.php:357
+#: admin/options/map.php:383
+msgid "From"
+msgstr ""
+
+#: admin/options/map.php:80
+#: admin/options/map.php:125
+#: admin/options/map.php:170
+#: admin/options/map.php:196
+#: admin/options/map.php:222
+#: admin/options/map.php:248
+#: admin/options/map.php:274
+#: admin/options/map.php:319
+#: admin/options/map.php:364
+#: admin/options/map.php:390
+msgid "To"
+msgstr ""
+
+#: admin/options/map.php:105
+msgid "Work Days"
+msgstr ""
+
+#: admin/options/map.php:107
+msgid "Working hours for workdays"
+msgstr ""
+
+#: admin/options/map.php:150
+#: modules/shortcodes/working-hours/elementor-working-hours.php:266
+#: modules/shortcodes/working-hours/elementor-working-hours.php:323
+#: modules/shortcodes/working-hours/working-hours.php:198
+#: modules/shortcodes/working-hours/working-hours.php:255
+msgid "Monday"
+msgstr ""
+
+#: admin/options/map.php:152
+msgid "Working hours for Monday"
+msgstr ""
+
+#: admin/options/map.php:176
+#: modules/shortcodes/working-hours/elementor-working-hours.php:275
+#: modules/shortcodes/working-hours/elementor-working-hours.php:332
+#: modules/shortcodes/working-hours/working-hours.php:207
+#: modules/shortcodes/working-hours/working-hours.php:264
+msgid "Tuesday"
+msgstr ""
+
+#: admin/options/map.php:178
+msgid "Working hours for Tuesday"
+msgstr ""
+
+#: admin/options/map.php:202
+#: modules/shortcodes/working-hours/elementor-working-hours.php:284
+#: modules/shortcodes/working-hours/elementor-working-hours.php:341
+#: modules/shortcodes/working-hours/working-hours.php:216
+#: modules/shortcodes/working-hours/working-hours.php:273
+msgid "Wednesday"
+msgstr ""
+
+#: admin/options/map.php:204
+msgid "Working hours for Wednesday"
+msgstr ""
+
+#: admin/options/map.php:228
+#: modules/shortcodes/working-hours/elementor-working-hours.php:293
+#: modules/shortcodes/working-hours/elementor-working-hours.php:350
+#: modules/shortcodes/working-hours/working-hours.php:225
+#: modules/shortcodes/working-hours/working-hours.php:282
+msgid "Thursday"
+msgstr ""
+
+#: admin/options/map.php:254
+#: modules/shortcodes/working-hours/elementor-working-hours.php:302
+#: modules/shortcodes/working-hours/elementor-working-hours.php:359
+#: modules/shortcodes/working-hours/working-hours.php:234
+#: modules/shortcodes/working-hours/working-hours.php:291
+msgid "Friday"
+msgstr ""
+
+#: admin/options/map.php:256
+msgid "Working hours for Friday"
+msgstr ""
+
+#: admin/options/map.php:299
+#: modules/shortcodes/working-hours/elementor-working-hours.php:212
+#: modules/shortcodes/working-hours/elementor-working-hours.php:311
+#: modules/shortcodes/working-hours/working-hours.php:144
+#: modules/shortcodes/working-hours/working-hours.php:243
+msgid "Weekend"
+msgstr ""
+
+#: admin/options/map.php:301
+msgid "Working hours for weekend"
+msgstr ""
+
+#: admin/options/map.php:344
+#: modules/shortcodes/working-hours/elementor-working-hours.php:233
+#: modules/shortcodes/working-hours/elementor-working-hours.php:368
+#: modules/shortcodes/working-hours/working-hours.php:165
+#: modules/shortcodes/working-hours/working-hours.php:300
+msgid "Saturday"
+msgstr ""
+
+#: admin/options/map.php:346
+msgid "Working hours for Saturday"
+msgstr ""
+
+#: admin/options/map.php:370
+#: modules/shortcodes/working-hours/elementor-working-hours.php:242
+#: modules/shortcodes/working-hours/elementor-working-hours.php:377
+#: modules/shortcodes/working-hours/working-hours.php:174
+#: modules/shortcodes/working-hours/working-hours.php:309
+msgid "Sunday"
+msgstr ""
+
+#: admin/options/map.php:372
+msgid "Working hours for Sunday"
+msgstr ""
+
+#: lib/helpers-functions.php:166
+#: modules/shortcodes/booked-calendar/booked-calendar.php:36
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:41
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:67
+#: modules/shortcodes/booked-slider/booked-slider.php:39
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:41
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:69
+msgid "Calendar"
+msgstr ""
+
+#: lib/helpers-functions.php:167
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:68
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:70
+msgid "List"
+msgstr ""
+
+#: lib/helpers-functions.php:182
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:88
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:122
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:157
+#: modules/shortcodes/booked-calendar/functions.php:78
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:44
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:90
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:124
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:159
+#: modules/shortcodes/working-hours/elementor-working-hours.php:44
+#: modules/shortcodes/working-hours/elementor-working-hours.php:75
+#: modules/shortcodes/working-hours/elementor-working-hours.php:109
+#: modules/shortcodes/working-hours/elementor-working-hours.php:144
+#: modules/shortcodes/working-hours/elementor-working-hours.php:164
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:49
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:137
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:171
+msgid "Default"
+msgstr ""
+
+#: lib/helpers-functions.php:183
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:158
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:160
+#: modules/shortcodes/working-hours/elementor-working-hours.php:45
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:50
+msgid "Light"
+msgstr ""
+
+#: lib/helpers-functions.php:184
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:159
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:161
+#: modules/shortcodes/working-hours/elementor-working-hours.php:46
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:51
+msgid "Dark"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:22
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:9
+msgid "Booked Calendar"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:24
+#: modules/shortcodes/booked-slider/booked-slider.php:24
+#: modules/shortcodes/working-hours/working-hours.php:24
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:33
+msgid "by CURLY BUSINESS"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:30
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:32
+#: modules/shortcodes/booked-slider/booked-slider.php:33
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:32
+#: modules/shortcodes/working-hours/elementor-working-hours.php:32
+#: modules/shortcodes/working-hours/working-hours.php:31
+msgid "Custom CSS Class"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:31
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:34
+#: modules/shortcodes/booked-slider/booked-slider.php:34
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:34
+#: modules/shortcodes/working-hours/elementor-working-hours.php:34
+#: modules/shortcodes/working-hours/working-hours.php:32
+msgid "Style particular content element differently - add a class name and refer to it in custom CSS"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:43
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:51
+#: modules/shortcodes/booked-slider/booked-slider.php:46
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:53
+msgid "Calendar Size"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:45
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:54
+#: modules/shortcodes/booked-slider/booked-slider.php:48
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:56
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:228
+msgid "Large"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:46
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:55
+#: modules/shortcodes/booked-slider/booked-slider.php:49
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:57
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:226
+msgid "Small"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:53
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:64
+#: modules/shortcodes/booked-slider/booked-slider.php:56
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:66
+msgid "Calendar Style"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:60
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:77
+#: modules/shortcodes/booked-slider/booked-slider.php:63
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:79
+#: modules/shortcodes/working-hours/elementor-working-hours.php:64
+#: modules/shortcodes/working-hours/working-hours.php:37
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:86
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:126
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:86
+msgid "Title"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:66
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:85
+#: modules/shortcodes/booked-slider/booked-slider.php:69
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:87
+#: modules/shortcodes/working-hours/elementor-working-hours.php:72
+#: modules/shortcodes/working-hours/working-hours.php:44
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:134
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:93
+msgid "Title Tag"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:74
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:108
+#: modules/shortcodes/booked-slider/booked-slider.php:77
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:110
+#: modules/shortcodes/working-hours/elementor-working-hours.php:95
+#: modules/shortcodes/working-hours/working-hours.php:53
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:157
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:102
+msgid "Title Color"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:80
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:119
+#: modules/shortcodes/booked-slider/booked-slider.php:83
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:121
+#: modules/shortcodes/working-hours/elementor-working-hours.php:106
+#: modules/shortcodes/working-hours/working-hours.php:60
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:168
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:109
+msgid "Title Font Weight"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:88
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:143
+#: modules/shortcodes/booked-slider/booked-slider.php:91
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:145
+#: modules/shortcodes/working-hours/elementor-working-hours.php:130
+#: modules/shortcodes/working-hours/working-hours.php:69
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:192
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:118
+msgid "Title Bottom Margin (px)"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/booked-calendar.php:94
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:154
+#: modules/shortcodes/booked-slider/booked-slider.php:97
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:156
+#: modules/shortcodes/working-hours/elementor-working-hours.php:41
+#: modules/shortcodes/working-hours/working-hours.php:76
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:46
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:47
+msgid "Skin"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:25
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:25
+#: modules/shortcodes/working-hours/elementor-working-hours.php:25
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:25
+msgid "General"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:89
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:91
+#: modules/shortcodes/working-hours/elementor-working-hours.php:76
+#: modules/shortcodes/working-hours/elementor-working-hours.php:145
+#: modules/shortcodes/working-hours/elementor-working-hours.php:165
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:138
+msgid "h1"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:90
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:92
+#: modules/shortcodes/working-hours/elementor-working-hours.php:77
+#: modules/shortcodes/working-hours/elementor-working-hours.php:146
+#: modules/shortcodes/working-hours/elementor-working-hours.php:166
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:139
+msgid "h2"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:91
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:93
+#: modules/shortcodes/working-hours/elementor-working-hours.php:78
+#: modules/shortcodes/working-hours/elementor-working-hours.php:147
+#: modules/shortcodes/working-hours/elementor-working-hours.php:167
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:140
+msgid "h3"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:92
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:94
+#: modules/shortcodes/working-hours/elementor-working-hours.php:79
+#: modules/shortcodes/working-hours/elementor-working-hours.php:148
+#: modules/shortcodes/working-hours/elementor-working-hours.php:168
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:141
+msgid "h4"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:93
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:95
+#: modules/shortcodes/working-hours/elementor-working-hours.php:80
+#: modules/shortcodes/working-hours/elementor-working-hours.php:149
+#: modules/shortcodes/working-hours/elementor-working-hours.php:169
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:142
+msgid "h5"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:94
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:96
+#: modules/shortcodes/working-hours/elementor-working-hours.php:81
+#: modules/shortcodes/working-hours/elementor-working-hours.php:150
+#: modules/shortcodes/working-hours/elementor-working-hours.php:170
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:143
+msgid "h6"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:95
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:97
+#: modules/shortcodes/working-hours/elementor-working-hours.php:82
+#: modules/shortcodes/working-hours/elementor-working-hours.php:151
+#: modules/shortcodes/working-hours/elementor-working-hours.php:171
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:144
+msgid "Theme Defined Heading"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:96
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:98
+#: modules/shortcodes/working-hours/elementor-working-hours.php:83
+#: modules/shortcodes/working-hours/elementor-working-hours.php:152
+#: modules/shortcodes/working-hours/elementor-working-hours.php:172
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:145
+msgid "p"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:123
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:125
+#: modules/shortcodes/working-hours/elementor-working-hours.php:110
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:172
+msgid "100 Thin"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:124
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:126
+#: modules/shortcodes/working-hours/elementor-working-hours.php:111
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:173
+msgid "200 Thin-Light"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:125
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:127
+#: modules/shortcodes/working-hours/elementor-working-hours.php:112
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:174
+msgid "300 Light"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:126
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:128
+#: modules/shortcodes/working-hours/elementor-working-hours.php:113
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:175
+msgid "400 Normal"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:127
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:129
+#: modules/shortcodes/working-hours/elementor-working-hours.php:114
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:176
+msgid "500 Medium"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:128
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:130
+#: modules/shortcodes/working-hours/elementor-working-hours.php:115
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:177
+msgid "600 Semi-Bold"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:129
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:131
+#: modules/shortcodes/working-hours/elementor-working-hours.php:116
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:178
+msgid "700 Bold"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:130
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:132
+#: modules/shortcodes/working-hours/elementor-working-hours.php:117
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:179
+msgid "800 Extra-Bold"
+msgstr ""
+
+#: modules/shortcodes/booked-calendar/elementor-booked-calendar.php:131
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:133
+#: modules/shortcodes/working-hours/elementor-working-hours.php:118
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:180
+msgid "900 Ultra-Bold"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:22
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:9
+msgid "Booked Slider"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:104
+#: modules/shortcodes/booked-slider/booked-slider.php:111
+#: modules/shortcodes/booked-slider/booked-slider.php:117
+#: modules/shortcodes/booked-slider/booked-slider.php:123
+#: modules/shortcodes/booked-slider/booked-slider.php:129
+#: modules/shortcodes/booked-slider/booked-slider.php:137
+#: modules/shortcodes/booked-slider/booked-slider.php:145
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:284
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:291
+msgid "Calendar Position"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:106
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:294
+msgid "Left"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:107
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:295
+msgid "Right"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:108
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:296
+msgid "Center"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:116
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:305
+msgid "Calendar Width (px or %)"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:122
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:313
+msgid "Calendar Top Offset (px or %)"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:128
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:321
+msgid "Calendar Side Offset (px or %)"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:134
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:329
+msgid "Set Calendar Vertical Align Middle"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:142
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:342
+msgid "Set Calendar In Grid"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:150
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:366
+msgid "Set calendar width for laptop screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:151
+#: modules/shortcodes/booked-slider/booked-slider.php:158
+#: modules/shortcodes/booked-slider/booked-slider.php:165
+#: modules/shortcodes/booked-slider/booked-slider.php:172
+#: modules/shortcodes/booked-slider/booked-slider.php:179
+#: modules/shortcodes/booked-slider/booked-slider.php:186
+#: modules/shortcodes/booked-slider/booked-slider.php:193
+#: modules/shortcodes/booked-slider/booked-slider.php:200
+#: modules/shortcodes/booked-slider/booked-slider.php:207
+#: modules/shortcodes/booked-slider/booked-slider.php:214
+#: modules/shortcodes/booked-slider/booked-slider.php:221
+#: modules/shortcodes/booked-slider/booked-slider.php:228
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:368
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:377
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:386
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:404
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:413
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:422
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:440
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:449
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:458
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:476
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:485
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:494
+msgid "Please insert value with px or %"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:152
+#: modules/shortcodes/booked-slider/booked-slider.php:159
+#: modules/shortcodes/booked-slider/booked-slider.php:166
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:359
+msgid "Laptop"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:157
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:375
+msgid "Set calendar top offset for laptop screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:164
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:384
+msgid "Set calendar side offset for laptop screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:171
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:402
+msgid "Set calendar width for tablet landscape screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:173
+#: modules/shortcodes/booked-slider/booked-slider.php:180
+#: modules/shortcodes/booked-slider/booked-slider.php:187
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:395
+msgid "Tablet Landscape"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:178
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:411
+msgid "Set calendar top offset for tablet landscape screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:185
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:420
+msgid "Set calendar side offset for tablet landscape screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:192
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:438
+msgid "Set calendar width for tablet portrait screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:194
+#: modules/shortcodes/booked-slider/booked-slider.php:201
+#: modules/shortcodes/booked-slider/booked-slider.php:208
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:431
+msgid "Tablet Portrait"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:199
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:447
+msgid "Set calendar top offset for tablet portrait screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:206
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:456
+msgid "Set calendar side offset for tablet portrait screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:213
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:474
+msgid "Set calendar width for mobile devices screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:215
+#: modules/shortcodes/booked-slider/booked-slider.php:222
+#: modules/shortcodes/booked-slider/booked-slider.php:229
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:467
+msgid "Mobile"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/booked-slider.php:220
+#: modules/shortcodes/booked-slider/booked-slider.php:227
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:483
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:492
+msgid "Set calendar top offset for mobile devices screen size and smaller"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:172
+msgid "Widget title"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:174
+msgid "Enter text used as widget title (Note: located above content element)."
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:181
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:272
+msgid "Revolution Slider"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:183
+msgid "Select your Revolution Slider."
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:185
+msgid "Hair-Salon"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:186
+msgid "Hairstyle-Home"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:187
+msgid "Landing-Bottom"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:188
+msgid "Landing-Pages"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:189
+msgid "Landing-Top"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:190
+msgid "Main-Home"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:191
+msgid "Vertical-Showcase"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:200
+msgid "Extra class name"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:202
+msgid "Style particular content element differently - add a class name and refer to it in custom CSS."
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:209
+msgid "Mikado Enable Passepartout"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:212
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:243
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:259
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:332
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:346
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:36
+msgid "No"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:213
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:244
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:260
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:333
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:345
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:37
+msgid "Yes"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:222
+msgid "Mikado Passepartout Size"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:225
+msgid "Tiny"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:227
+msgid "Normal"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:240
+msgid "Mikado Disable Side Passepartout"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:256
+msgid "Mikado Disable Top Passepartout"
+msgstr ""
+
+#: modules/shortcodes/booked-slider/elementor-booked-slider.php:275
+msgid "Item"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:57
+#: modules/shortcodes/working-hours/working-hours.php:39
+#: modules/shortcodes/working-hours/working-hours.php:48
+#: modules/shortcodes/working-hours/working-hours.php:55
+#: modules/shortcodes/working-hours/working-hours.php:64
+#: modules/shortcodes/working-hours/working-hours.php:71
+#: modules/shortcodes/working-hours/working-hours.php:87
+#: modules/shortcodes/working-hours/working-hours.php:96
+msgid "Styling Options"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:141
+#: modules/shortcodes/working-hours/working-hours.php:83
+#: modules/widgets/working-hours/working-hours.php:36
+msgid "Label Tag"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:161
+#: modules/shortcodes/working-hours/working-hours.php:92
+#: modules/widgets/working-hours/working-hours.php:42
+msgid "Time Tag"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:203
+#: modules/shortcodes/working-hours/elementor-working-hours.php:224
+#: modules/shortcodes/working-hours/working-hours.php:135
+#: modules/shortcodes/working-hours/working-hours.php:156
+msgid "Working Days"
+msgstr ""
+
+#: modules/shortcodes/working-hours/elementor-working-hours.php:254
+#: modules/shortcodes/working-hours/working-hours.php:186
+msgid "Every Day"
+msgstr ""
+
+#: modules/shortcodes/working-hours/templates/working-hours-template.php:30
+msgid "Working hours are not set"
+msgstr ""
+
+#: modules/widgets/working-hours/working-hours.php:8
+msgid "Curly Working Hours"
+msgstr ""
+
+#: modules/widgets/working-hours/working-hours.php:9
+msgid "Add Working Hours to widget areas"
+msgstr ""
+
+#: modules/widgets/working-hours/working-hours.php:20
+msgid "Extra Class Name"
+msgstr ""
+
+#: modules/widgets/working-hours/working-hours.php:25
+msgid "Widget Width"
+msgstr ""
+
+#: modules/widgets/working-hours/working-hours.php:26
+msgid "For example: 80%"
+msgstr ""
+
+#: modules/widgets/working-hours/working-hours.php:31
+msgid "Widget Title"
+msgstr ""
+
+#: post-types/business-services/admin/meta-boxes/business-services-meta-boxes.php:9
+msgid "Business Services Item Settings"
+msgstr ""
+
+#: post-types/business-services/admin/meta-boxes/business-services-meta-boxes.php:19
+msgid "Business Services Item Price"
+msgstr ""
+
+#: post-types/business-services/admin/meta-boxes/business-services-meta-boxes.php:20
+msgid "Enter price for this business services item"
+msgstr ""
+
+#: post-types/business-services/admin/meta-boxes/business-services-meta-boxes.php:33
+msgid "Business Services Item Description"
+msgstr ""
+
+#: post-types/business-services/admin/meta-boxes/business-services-meta-boxes.php:34
+msgid "Enter description for this business services item"
+msgstr ""
+
+#: post-types/business-services/admin/meta-boxes/business-services-meta-boxes.php:44
+msgid "Business Services Item Label"
+msgstr ""
+
+#: post-types/business-services/admin/meta-boxes/business-services-meta-boxes.php:45
+msgid "Enter label for this business services item"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:51
+#: post-types/business-services/business-services-register.php:52
+msgid "Business Services"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:53
+msgid "Business Services Items"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:54
+#: post-types/business-services/business-services-register.php:57
+msgid "Add New Business Services Item"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:55
+msgid "Business Services Item"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:56
+msgid "New Business Services Item"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:58
+msgid "Edit Business Services Item"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:77
+#: post-types/business-services/business-services-register.php:78
+msgid "Business Services Category"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:79
+msgid "Search Business Services Categories"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:80
+msgid "All Business Services Categories"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:81
+msgid "Parent Business Services Category"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:82
+msgid "Parent Business Services Category:"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:83
+msgid "Edit Business Services Category"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:84
+msgid "Update Business Services Category"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:85
+msgid "Add New Business Services Category"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:86
+msgid "New Business Services Category Name"
+msgstr ""
+
+#: post-types/business-services/business-services-register.php:87
+msgid "Business Services Categories"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:9
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:31
+msgid "Services List"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:32
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:39
+msgid "Show Featured Image?"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:34
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:43
+msgid "Use this option to show featured image of menu items"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:60
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:70
+msgid "One-Category Business Services list"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:62
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:71
+msgid "Enter one category slug (leave empty for showing all categories)"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:71
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:57
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:65
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:81
+msgid "Query and Layout Options"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:78
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:53
+msgid "Order By"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:81
+msgid "Date"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:82
+msgid "ID"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:83
+msgid "Menu Order"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:84
+msgid "Post Name"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:85
+msgid "Random"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:95
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:62
+msgid "Order"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:98
+msgid "ASC"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:99
+msgid "DESC"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:108
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:76
+msgid "Number of Business Menu Items"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:110
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:80
+msgid "(enter -1 to show all)"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:119
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:88
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:97
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:104
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:113
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:120
+msgid "Title Options"
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/elementor-services-list.php:240
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:178
+msgid "Sorry, no menu items matched your criteria."
+msgstr ""
+
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:234
+#: post-types/business-services/shortcodes/services-list/servicess-list.php:255
+msgid "Category"
+msgstr ""

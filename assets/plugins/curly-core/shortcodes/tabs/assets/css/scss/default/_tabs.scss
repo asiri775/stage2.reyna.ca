@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.mkdf-tabs {
+    @include mkdfRelativeHolderLayout();
+
+    .mkdf-tabs-nav {
+        @include mkdfRelativeHolderLayout();
+
+        clear: both;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            background: transparent;
+            display: inline-block;
+            margin-right: 26px;
+            position: relative;
+            vertical-align: middle;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                @include mkdfH5();
+
+                color: $default-text-color;
+                display: inline-block;
+                padding: 15px 31px;
+                position: relative;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .mkdf-tab-container {
+        box-sizing: border-box;
+
+        @include mkdfRelativeHolderLayout();
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .mkdf-tab-container {
+        margin: 25px 0 0;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // skin
+
+    &.mkdf-light {
+        .mkdf-tabs-nav a {
+            color: #ffffff;
+        }
+
+        .ui-state-active,
+        .ui-state-hover {
+            background: #ffffff;
+
+            a {
+                color: $default-text-color;
+            }
+        }
+
+        .ui-widget-content {
+            color: #ffffff;
+        }
+    }
+
+    &.mkdf-dark {
+        .ui-state-active,
+        .ui-state-hover {
+            background: $default-text-color;
+
+            a {
+                color: #ffffff;
+            }
+        }
+
+        .ui-widget-content {
+            color: $default-text-color;
+        }
+    }
+}
+
+.ui-widget-content {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+
+    .ui-widget-header {
+        background: none;
+        border: 0;
+        border-radius: 0;
+        color: initial;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+    }
+
+    .ui-tabs-nav {
+        li {
+            background: initial;
+            border: 0;
+            border-radius: 0;
+            color: inherit;
+            font-weight: inherit;
+            position: initial;
+        }
+    }
+
+    .ui-widget-content {
+        background: none;
+        border: 0;
+        border-radius: 0;
+        color: inherit;
+    }
+}
+
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

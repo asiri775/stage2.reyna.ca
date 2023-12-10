@@ -1,0 +1,265 @@
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+
+.mkdf-image-with-text-holder {
+    @include mkdfRelativeHolderLayout();
+
+    &.mkdf-has-shadow {
+
+        .mkdf-iwt-image {
+            box-shadow: $default-box-shadow;
+        }
+    }
+
+    .mkdf-iwt-image {
+        @include mkdfRelativeHolderLayout();
+
+        a, img {
+            position: relative;
+            display: block;
+        }
+    }
+
+    .mkdf-iwt-text-holder {
+        @include mkdfRelativeHolderLayout();
+    }
+
+    .mkdf-iwt-title {
+        margin: 32px 0 0;
+    }
+
+    .mkdf-iwt-text {
+        margin: 14px 0 0;
+    }
+
+    /***** Custom Link Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-custom-link {
+
+        .mkdf-iwt-image {
+
+            a {
+                &:hover {
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                &:after {
+                    @include mkdfAbsoluteHolderLayout();
+
+                    content: '';
+                    background-color: rgba($default-text-color, .2);
+                    opacity: 0;
+
+                    @include mkdfTransition(opacity .2s ease-in-out);
+                }
+            }
+        }
+    }
+
+    /***** Custom Link Behavior Style - end *****/
+
+    /***** Lightbox Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-lightbox {
+
+        .mkdf-iwt-image {
+
+            a {
+                &:hover {
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                &:after {
+                    @include mkdfAbsoluteHolderLayout();
+
+                    content: '';
+                    background-color: rgba($default-text-color, .2);
+                    opacity: 0;
+
+                    @include mkdfTransition(opacity .2s ease-in-out);
+                }
+            }
+        }
+    }
+
+    /***** Lightbox Behavior Style - end *****/
+
+    /***** Zoom Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-zoom {
+
+        .mkdf-iwt-image {
+            overflow: hidden;
+
+            .touchevents & {
+                cursor: pointer;
+            }
+
+            &:hover {
+
+                img {
+                    @include mkdfTransform(scale(1.04));
+                }
+            }
+
+            img {
+                @include mkdfTransform(scale(1));
+                @include mkdfTransitionTransform(.3s ease-in-out);
+            }
+        }
+    }
+
+    /***** Zoom Behavior Style - end *****/
+
+    /***** Grayscale Behavior Style - begin *****/
+
+    &.mkdf-image-behavior-grayscale {
+
+        .mkdf-iwt-image {
+            overflow: hidden;
+
+            .touchevents & {
+                cursor: pointer;
+            }
+
+            &:hover {
+
+                img {
+                    -webkit-filter: grayscale(0);
+                    filter: none;
+                }
+            }
+
+            img {
+                filter: url('img/desaturate.svg#grayscale');
+                -webkit-filter: grayscale(100%);
+                -moz-filter: grayscale(100%);
+                filter: gray;
+                filter: grayscale(100%);
+                @include mkdfTransition(all .3s ease-in-out);
+            }
+        }
+    }
+
+    /***** Grayscale Behavior Style - end *****/
+
+    &.mkdf-has-bottom-buttons {
+
+        .mkdf-iwt-text-holder-inner {
+            transition: all .35s ease-out;
+        }
+
+        .mkdf-iwt-bottom-buttons-holder{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1em;
+            width: 100%;
+            z-index: 2; //to be above hover overlay over title
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: all .5s ease-out;
+
+            .mkdf-iwt-bottom-link{
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 17px;
+                padding: 0;
+
+                a {
+                    color: inherit;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(15px);
+                    transition: all .7s ease-out;
+                }
+
+                .mkdf-iwt-bottom-text {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    &:before,
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background-color: currentColor;
+                    }
+
+                    &:before {
+                        transform-origin: right;
+
+                        @include mkdfTransition(all .2s ease-in 0s);
+                    }
+
+                    &:after {
+                        transform-origin: left;
+
+                        @include mkdfTransform(scale(0, 1));
+                        @include mkdfTransition(all .25s ease-out .25s);
+                    }
+
+                    &:hover {
+                        &:before {
+                            @include mkdfTransform(scale(0, 1));
+                        }
+
+                        &:after {
+                            @include mkdfTransform(scale(1, 1));
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &:hover{
+
+            .mkdf-iwt-text-holder-inner {
+                transition: all .5s ease-out;
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            .mkdf-iwt-bottom-buttons-holder{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                transition: all .35s ease-out;
+
+                .mkdf-iwt-bottom-link:last-child {
+                    transition: all .5s ease-out;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+    
+}
+
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */

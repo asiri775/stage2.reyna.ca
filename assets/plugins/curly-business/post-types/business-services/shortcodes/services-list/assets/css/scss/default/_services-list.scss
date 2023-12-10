@@ -1,0 +1,154 @@
+/* ==========================================================================
+# Business Services List style - begin
+========================================================================== */
+
+.mkdf-bsl-holder {
+    ul {
+        list-style-type: none;
+
+        li {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .mkdf-bsl-item-top-holder {
+    }
+
+    .mkdf-bsl-item-title-holder {
+        display: table-cell;
+        width: 1%;
+        white-space: nowrap;
+        padding-right: 5px;
+    }
+
+    .mkdf-bsl-item-line {
+        height: 3px;
+        border-bottom: 1px solid $default-border-color;
+        display: table-cell;
+        width: 98%;
+        z-index: 1;
+        position: relative;
+        bottom: 9px;
+    }
+
+    .mkdf-bsl-item-price-holder {
+        display: table-cell;
+        width: 1%;
+        padding-left: 7px;
+        white-space: nowrap;
+    }
+
+    .mkdf-bsl-item-bottom-holder {
+        position: relative;
+        top: 3px;
+    }
+
+    .mkdf-bsl-item-description-holder {
+        color: $first-main-color;
+        float: left;
+        width: 70%;
+        line-height: 1.2em;
+    }
+
+    .mkdf-bsl-item-label-holder {
+        float: right;
+        position: relative;
+        width: 30%;
+        text-align: right;
+
+        .mkdf-bsl-item-label {
+            background-color: $first-main-color;
+            color: $default-text-color;
+            font-style: italic;
+            padding: 3px 13px;
+            text-align: center;
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // with image
+
+    &.mkdf-bsl-with-image {
+        .mkdf-bsl-item-content {
+            padding-left: 110px;
+        }
+
+        .mkdf-bsl-item-image {
+            float: left;
+            width: 83px;
+            position: relative;
+
+            a {
+                display: block;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // light
+
+    &.mkdf-bsl-light {
+        .mkdf-bsl-item-title {
+            color: #ffffff;
+        }
+
+        .mkdf-bsl-item-line {
+            border-bottom-color: rgba(#ffffff, 0.2);
+        }
+
+        .mkdf-bsl-item-price-holder {
+            color: #ffffff;
+        }
+
+        .mkdf-bsl-item-description-holder {
+            color: #ffffff;
+        }
+
+        .mkdf-bsl-item-label-holder {
+            .mkdf-bsl-item-label {
+                background-color: #ffffff;
+                color: $default-text-color;
+            }
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // dark
+
+    &.mkdf-bsl-dark {
+        .mkdf-bsl-item-title {
+            color: $default-text-color;
+        }
+
+        .mkdf-bsl-item-line {
+            border-bottom-color: rgba($default-text-color, 0.2);
+        }
+
+        .mkdf-bsl-item-price-holder {
+            color: $default-text-color;
+        }
+
+        .mkdf-bsl-item-description-holder {
+            color: $default-text-color;
+        }
+
+        .mkdf-bsl-item-label-holder {
+            .mkdf-bsl-item-label {
+                background-color: $default-text-color;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Business Services List style - end
+========================================================================== */

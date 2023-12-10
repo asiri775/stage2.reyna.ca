@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// datepicker
+
+#ui-datepicker-div {
+    &.booked_custom_date_picker {
+        border: 3px solid $first-main-color;
+        border-radius: 0;
+        box-shadow: $default-box-shadow;
+        padding: 0;
+
+        .ui-datepicker-header {
+            background-color: $first-main-color !important;
+            padding: 5px 25px;
+        }
+
+        .ui-datepicker-prev,
+        .ui-datepicker-next {
+            top: 8px;
+
+            &:before {
+                color: $default-text-color !important;
+                font-family: 'BookedIcons' !important;
+                font-size: 12px !important;
+            }
+        }
+
+        .ui-datepicker-title {
+            @include mkdfH5(!important);
+        }
+
+        table {
+            &.ui-datepicker-calendar {
+                border-collapse: initial;
+
+                thead {
+                    background-color: $first-main-color !important;
+
+                    th {
+                        background: transparent !important;
+                        color: $default-text-color;
+                    }
+                }
+
+                tbody {
+                    td {
+                        a {
+                            border-radius: 0;
+                            color: $default-text-color !important;
+
+                            &:hover {
+                                background-color: $elements-color-two;
+                            }
+
+                            &.ui-state-active,
+                            &.ui-state-active:hover {
+                                background-color: $first-main-color !important;
+                                color: #ffffff !important;
+                            }
+                        }
+
+                        &.ui-datepicker-unselectable {
+                            span {
+                                color: $elements-color-two;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,256 @@
+/* ==========================================================================
+   Vertical Split Slider shortcode style - begin
+   ========================================================================== */
+
+.mkdf-vss-initialized {
+    .mkdf-content {
+        .mkdf-content-inner {
+            > .mkdf-container {
+                > .mkdf-container-inner {
+                    padding: 0;
+                }
+            }
+
+            > .mkdf-full-width {
+                > .mkdf-full-width-inner {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.mkdf-vertical-split-slider {
+    margin: 0 -2px;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+
+    .mkdf-vss-ms-left,
+    .mkdf-vss-ms-right {
+        box-sizing: border-box;
+        height: 100%;
+        position: absolute;
+        width: 50%;
+    }
+
+    .mkdf-vss-ms-left {
+        left: 0;
+        top: 0;
+
+        .mkdf-vss-ms-section {
+            background-position: 100% center;
+            background-size: cover;
+        }
+    }
+
+    .mkdf-vss-ms-right {
+        right: 0;
+        top: 10000px;
+
+        .mkdf-vss-ms-section {
+            background-position: 0 center;
+            background-size: cover;
+        }
+    }
+
+    .mkdf-vss-ms-section {
+        &.ms-table {
+            box-sizing: border-box;
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .ms-tableCell {
+            box-sizing: border-box;
+            display: table-cell;
+            height: 100%;
+            vertical-align: middle;
+            width: 100%;
+
+            @include mkdfTransition(padding .45s cubic-bezier(.4, 0, .2, 1));
+        }
+
+        .ms-easing {
+            @include mkdfTransition(all 0.7s ease-out);
+        }
+    }
+
+    &.mkdf-vss-scrolled {
+        .mkdf-vss-ms-left {
+            .mkdf-vss-ms-section {
+                .ms-tableCell {
+                    padding: 7.5rem 0 7.5rem 7.5rem;
+                }
+            }
+        }
+
+        .mkdf-vss-ms-right {
+            .mkdf-vss-ms-section {
+                .ms-tableCell {
+                    padding: 7.5rem 7.5rem 7.5rem 0;
+                }
+            }
+        }
+
+        .mkdf-vss-horizontal-mask {
+            &:before,
+            &:after {
+                @include mkdfTransform(scaleY(1));
+            }
+        }
+
+        .mkdf-vss-vertical-mask {
+            &:before,
+            &:after {
+                @include mkdfTransform(scaleX(1));
+            }
+        }
+    }
+
+    .mkdf-vss-horizontal-mask {
+        &:before,
+        &:after {
+            background-color: #fff;
+            content: '';
+            height: 7.5rem;
+            left: 0;
+            position: absolute;
+            right: 0;
+            z-index: 500;
+
+            @include mkdfTransform(scaleY(0));
+            @include mkdfTransitionTransform(.45s cubic-bezier(.4, 0, .2, 1));
+        }
+
+        &:before {
+            top: 0;
+            transform-origin: center top;
+            -ms-transform-origin: center top;
+            -webkit-transform-origin: center top;
+        }
+
+        &:after {
+            bottom: 0;
+            transform-origin: center bottom;
+            -ms-transform-origin: center bottom;
+            -webkit-transform-origin: center bottom;
+        }
+    }
+
+    .mkdf-vss-vertical-mask {
+        &:before,
+        &:after {
+            background-color: #fff;
+            bottom: 0;
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 7.5rem;
+            z-index: 500;
+
+            @include mkdfTransform(scaleX(0));
+            @include mkdfTransitionTransform(.45s cubic-bezier(.4, 0, .2, 1));
+        }
+
+        &:before {
+            left: 0;
+            transform-origin: center left;
+            -ms-transform-origin: center left;
+            -webkit-transform-origin: center left;
+        }
+
+        &:after {
+            right: 0;
+            transform-origin: center right;
+            -ms-transform-origin: center right;
+            -webkit-transform-origin: center right;
+        }
+    }
+
+    .mkdf-info-section .mkdf-is-background-text {
+        opacity:.2;
+    }
+}
+
+.mkdf-vss-responsive {
+    display: none;
+
+    .mkdf-vss-ms-section {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+#multiscroll-nav {
+    margin-top: -10px;
+    opacity: 1;
+    position: fixed;
+    right: 37px;
+    top: 50%;
+    z-index: 1000;
+
+    @include mkdfTransition(opacity .5s ease-out);
+
+    .mkdf-fullscreen-menu-opened & {
+        z-index: -1;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: block;
+            overflow: hidden;
+            padding: 6px 3px;
+            position: relative;
+
+            a {
+                background-color: #c9c9c9;
+                border-radius: 3em;
+                box-sizing: border-box;
+                display: block;
+                height: 10px;
+                margin: 0 auto;
+                position: relative;
+                vertical-align: middle;
+                width: 10px;
+                z-index: 1;
+
+                @include mkdfTransition(background-color .2s ease-out, border .2s ease-out);
+
+                &:hover,
+                &.active {
+                    background-color: #5e5e5e;
+                }
+
+                .mkdf-light-header & {
+                    background-color: #4f4f4f;
+
+                    &:hover,
+                    &.active {
+                        background-color: #989898;
+                    }
+                }
+
+                //.mkdf-dark-header & {
+                //    border-color: $header-dark-color;
+                //
+                //    &.active {
+                //        background-color: $header-dark-color;
+                //    }
+                //}
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode style - end
+   ========================================================================== */

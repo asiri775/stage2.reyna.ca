@@ -1,0 +1,67 @@
+.mkdf-wh-holder {
+    position: relative;
+
+    .mkdf-wh-items {
+        margin: 0;
+    }
+
+    .mkdf-wh-item {
+        border-bottom: 1px solid $default-border-color;
+        list-style-type: none;
+        margin-bottom: 16px;
+        padding-bottom: 17px;
+        position: relative;
+
+        &:last-child {
+            border: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .mkdf-wh-day {
+        display: table-cell;
+        margin: 0;
+        vertical-align: bottom;
+        white-space: nowrap;
+        width: 1%;
+    }
+
+    .mkdf-wh-hours {
+        color: $first-main-color;
+        display: table-cell;
+        margin: 0;
+        text-align: right;
+        vertical-align: bottom;
+        white-space: nowrap;
+        width: 1%;
+    }
+
+    &.mkdf-wh-light {
+        .mkdf-wh-item {
+            border-bottom-color: rgba(#ffffff, 0.2);
+        }
+
+        .mkdf-wh-day {
+            color: #ffffff;
+        }
+
+        .mkdf-wh-hours {
+            color: #ffffff;
+        }
+    }
+
+    &.mkdf-wh-dark {
+        .mkdf-wh-item {
+            border-bottom-color: rgba($default-text-color, 0.2);
+        }
+
+        .mkdf-wh-day {
+            color: $default-text-color;
+        }
+
+        .mkdf-wh-hours {
+            color: $default-text-color;
+        }
+    }
+}

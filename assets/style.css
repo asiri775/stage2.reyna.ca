@@ -1,0 +1,27 @@
+.mt-100 {
+    margin-top: 100px;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mkdf-btn.mkdf-btn-small {
+    font-size: 12px;
+    padding: 10px 18px !important;
+}
+.mkdf-ps-related-posts .mkdf-psr-post {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    padding: 0 15px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+    margin-bottom: 50px;
+}
